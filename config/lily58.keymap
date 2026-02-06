@@ -22,11 +22,11 @@
 
             display-name = "Base";
             bindings = <
-&kp GRAVE              &kp N1  &kp N2  &kp N3        &kp N4     &kp N5                                  &kp N6       &kp N7       &kp N8        &kp N9   &kp N0    &kp GRAVE
-&mt LCTRL TAB          &kp Q   &kp W   &kp E         &kp R      &kp T                                   &kp Y        &kp U        &kp I         &kp O    &kp P     &mt LCTRL BACKSPACE
-&mt LEFT_SHIFT ESCAPE  &kp A   &kp S   &kp D         &kp F      &kp G                                   &kp H        &kp J        &kp K         &kp L    &kp SEMI  &mt LSHIFT ENTER
-&mt LS(LGUI) DEL       &kp Z   &kp X   &kp C         &kp V      &kp B            &kp LBKT     &kp RBKT  &kp N        &kp M        &kp COMMA     &kp DOT  &kp FSLH  &mt LS(LGUI) DELETE
-                                       &kp CAPSLOCK  &lt 3 TAB  &lt 1 BACKSPACE  &kp SPACE    &kp RET   &lt 2 SPACE  &lt 3 ENTER  &kp CAPSLOCK
+&kp GRAVE              &kp N1  &kp N2  &kp N3        &kp N4     &kp N5                             &kp N6       &kp N7       &kp N8        &kp N9   &kp N0    &kp MINUS
+&mt LCTRL TAB          &kp Q   &kp W   &kp E         &kp R      &kp T                              &kp Y        &kp U        &kp I         &kp O    &kp P     &mt LCTRL BACKSPACE
+&mt LEFT_SHIFT ESCAPE  &kp A   &kp S   &kp D         &kp F      &kp G                              &kp H        &kp J        &kp K         &kp L    &kp SEMI  &mt LSHIFT ENTER
+&mt LS(LGUI) DEL       &kp Z   &kp X   &kp C         &kp V      &kp B            &trans    &trans  &kp N        &kp M        &kp COMMA     &kp DOT  &kp FSLH  &mt LS(LGUI) DELETE
+                                       &kp CAPSLOCK  &lt 4 TAB  &lt 1 BACKSPACE  &trans    &trans  &lt 2 SPACE  &lt 4 ENTER  &kp CAPSLOCK
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -42,11 +42,11 @@
 
             display-name = "Lower";
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans     &trans     &trans           &trans    &trans    &trans
-&kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                          &kp F7     &kp F8     &kp F9           &kp F10   &kp F11   &kp F12
-&kp GRAVE   &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PRCNT                       &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp TILDE
-&trans      &trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans     &kp MINUS  &kp KP_PLUS      &kp LBRC  &kp RBRC  &kp PIPE
-                                        &trans        &trans        &trans        &trans    &trans  &trans     &trans     &trans
+&kp LG(UP_ARROW)    &kp LS(LG(UP_ARROW))  &kp LA(LS(LEFT_ARROW))  &kp LG(A)               &kp LA(LS(RIGHT))     &kp LS(LG(DOWN))                     &trans        &trans       &trans        &trans       &trans               &kp EQUAL
+&kp LS(LG(TAB))     &kp LS(LG(LEFT))      &kp LG(LEFT_ARROW)      &mt LGUI UP_ARROW       &kp LG(RIGHT)         &kp LS(LG(RIGHT))                    &kp GRAVE     &kp N7       &mt LGUI N8   &kp N9       &kp N0               &kp BACKSPACE
+&kp LG(TAB)         &mt LA(LSHIFT) ENTER  &mt LALT LEFT_ARROW     &mt LSHIFT DOWN_ARROW   &mt LGUI RIGHT        &kp LA(ENTER)                        &kp KP_PLUS   &mt LGUI N4  &mt LSHFT N5  &mt LALT N6  &mt LESS_THAN MINUS  &kp ENTER
+&kp LG(DOWN_ARROW)  &mt LSHIFT CAPSLOCK   &kp PAGE_UP             &mt RALT K_APPLICATION  &mt RSHIFT PAGE_DOWN  &trans             &trans    &trans  &kp ASTERISK  &kp N1       &mt LALT N2   &kp N3       &kp SLASH            &kp DELETE
+                                                                  &kp ESCAPE              &kp TAB               &trans             &trans    &trans  &kp SPACE     &kp ENTER    &kp DOT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -66,7 +66,7 @@
 &kp GRAVE  &kp N1  &kp N2  &kp N3   &kp N4   &kp N5                     &kp N6       &kp N7     &kp N8     &kp N9    &kp N0     &trans
 &kp F1     &kp F2  &kp F3  &kp F4   &kp F5   &kp F6                     &trans       &kp LEFT   &kp DOWN   &kp UP    &kp RIGHT  &trans
 &kp F7     &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &trans    &trans  &kp KP_PLUS  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT   &kp BSLH
-                           &trans   &trans   &trans   &trans    &trans  &trans       &trans     &trans
+                           &trans   &mo 3    &trans   &trans    &trans  &trans       &trans     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -79,6 +79,16 @@
 &kp GRAVE   &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PRCNT                       &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp TILDE
 &trans      &trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans     &kp MINUS  &kp KP_PLUS      &kp LBRC  &kp RBRC  &kp PIPE
                                         &trans        &trans        &trans        &trans    &trans  &trans     &trans     &trans
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
             >;
         };
     };
