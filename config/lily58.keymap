@@ -62,10 +62,10 @@
 
             display-name = "Raise";
             bindings = <
-&trans      &trans             &trans           &trans           &trans                &trans                                   &trans       &trans     &trans     &trans    &trans     &trans
-&kp TAB     &kp TILDE          &kp AMPERSAND    &kp ASTRK        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                    &kp N6       &kp N7     &kp N8     &kp N9    &kp N0     &trans
-&kp ESCAPE  &kp DOUBLE_QUOTES  &kp DOLLAR       &kp PERCENT      &kp CARET             &trans                                   &trans       &kp LEFT   &kp DOWN   &kp UP    &kp RIGHT  &trans
-&kp DELETE  &kp SQT            &kp EXCLAMATION  &kp AT_SIGN      &kp HASH              &trans                 &trans    &trans  &kp KP_PLUS  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT   &kp BSLH
+&trans      &trans             &trans           &trans           &trans                &trans                                   &kp LS(LG(UP_ARROW))  &kp LA(LS(LEFT_ARROW))  &kp LG(A)               &kp LA(LS(RIGHT))     &kp LS(LG(DOWN))     &kp LG(UP_ARROW)
+&kp TAB     &kp TILDE          &kp AMPERSAND    &kp ASTRK        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                    &kp LS(LG(LEFT))      &kp LG(LEFT_ARROW)      &mt LGUI UP_ARROW       &kp LG(RIGHT)         &kp LS(LG(RIGHT))    &kp LS(LG(TAB)) 
+&kp ESCAPE  &kp DOUBLE_QUOTES  &kp DOLLAR       &kp PERCENT      &kp CARET             &trans                                   &mt LA(LSHIFT) ENTER  &mt LALT LEFT_ARROW     &mt LSHIFT DOWN_ARROW   &mt LGUI RIGHT        &kp LA(ENTER)   &kp LG(TAB)
+&kp DELETE  &kp SQT            &kp EXCLAMATION  &kp AT_SIGN      &kp HASH              &trans                 &trans    &trans  &mt LSHIFT CAPSLOCK   &kp PAGE_UP             &mt RALT K_APPLICATION  &mt RSHIFT PAGE_DOWN  &trans   &kp LG(DOWN_ARROW)
                                                 &kp LA(LC(END))  &mo 3                 &trans                 &trans    &trans  &trans       &trans     &trans
             >;
 
