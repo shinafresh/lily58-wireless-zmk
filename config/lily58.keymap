@@ -41,13 +41,19 @@
             //                     |      |      |      |        |  |       |      |       |       |
 
             display-name = "Lower";
-            bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans     &trans     &trans           &trans    &trans    &trans
-&kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                          &kp F7     &kp F8     &kp F9           &kp F10   &kp F11   &kp F12
-&kp GRAVE   &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PRCNT                       &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp TILDE
-&trans      &trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans     &kp MINUS  &kp KP_PLUS      &kp LBRC  &kp RBRC  &kp PIPE
-                                        &trans        &trans        &trans        &trans    &trans  &trans     &trans     &trans
-            >;
+
+
+
+        bindings = <
+            &kp GUI(UP)    &kp GUI(LSFT(DOWN))    &kp LALT(LSFT(LEFT))    &kp GUI(A)    &kp LALT(LSFT(RIGHT))    &kp GUI(LSFT(DOWN))        &macro_7    &macro_8    &macro_6    &kp TILD    &trans    &kp EQUAL
+            &kp GUI(LSFT(TAB))    &kp GUI(LSFT(LEFT))    &kp GUI(LEFT)    &mt GUI 8    &kp GUI(RIGHT)    &kp GUI(LSFT(RIGHT))        &kp GRAVE    &kp 7    &mt GUI 8    &kp 9    &kp 0    &kp BACKSPACE
+            &kp GUI(TAB)    &mt LALT_LSFT ENTER    &mt LALT LEFT    &mt LSFT DOWN    &mt GUI RIGHT    &kp LALT(ENT)                &kp PPLS    &mt GUI 4    &mt LSFT 5    &mt LALT 6    &mt LCTL MINUS    &kp ENTER
+            &kp GUI(DOWN)    &mt LSFT CAPS_LOCK    &kp PGUP    &mt RALT APPLICATION    &mt RSFT PGDN    &trans          &trans    &trans              &kp ASTR    &kp 1    &mt LALT 2    &kp 3    &kp SLASH    &kp DEL
+            &kp ESC    &kp TAB    &trans           &trans    &trans                         &kp SPACE    &kp ENTER    &kp DOT
+        >;
+
+
+
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
