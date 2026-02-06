@@ -35,7 +35,7 @@
                                                         &kp ESCAPE            &kp TAB            &none              &trans    &trans  &kp SPACE        &kp ENTER    &kp DOT
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            
         };
 
         raise_layer {
@@ -45,7 +45,7 @@
 &kp TAB     &kp TILDE  &kp AMPS          &kp KP_MULTIPLY   &kp LPAR   &kp RPAR                    &kp LG(LS(LEFT))  &kp LG(LEFT)      &mt LGUI UP           &kp LG(RIGHT)      &kp LG(LS(RIGHT))    &kp LG(LS(TAB))
 &kp ESCAPE  &kp DQT    &kp DOLLAR        &kp PRCNT         &kp CARET  &none                       &kp LA(ENTER)     &mt LGUI LEFT     &mt LSHIFT DOWN       &mt RALT RIGHT     &mt LS(LALT) ESCAPE  &kp LG(TAB)
 &kp DEL     &kp SQT    &kp EXCL          &kp AT            &kp HASH   &none     &trans    &trans  &none             &mt RSHIFT PG_UP  &mt RALT APPLICATION  &kp PG_DN          &mt LSHIFT F12       &kp LG(DOWN)
-                                         &none             &mo 3      &trans    &trans    &trans  &none             &kp ENTER         &kp DEL sensor
+                                         &none             &mo 3      &trans    &trans    &trans  &none             &kp ENTER         &kp DEL 
             >;
         };
 
