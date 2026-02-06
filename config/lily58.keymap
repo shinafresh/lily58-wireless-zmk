@@ -62,11 +62,11 @@
 
             display-name = "Raise";
             bindings = <
-&trans      &trans             &trans           &trans           &trans                &trans                                   &kp LS(LG(UP_ARROW))  &kp LA(LS(LEFT_ARROW))  &kp LG(A)               &kp LA(LS(RIGHT))     &kp LS(LG(DOWN))     &kp LG(UP_ARROW)
-&kp TAB     &kp TILDE          &kp AMPERSAND    &kp ASTRK        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                    &kp LS(LG(LEFT))      &kp LG(LEFT_ARROW)      &mt LGUI UP_ARROW       &kp LG(RIGHT)         &kp LS(LG(RIGHT))    &kp LS(LG(TAB)) 
-&kp ESCAPE  &kp DOUBLE_QUOTES  &kp DOLLAR       &kp PERCENT      &kp CARET             &trans                                   &mt LA(LSHIFT) ENTER  &mt LALT LEFT_ARROW     &mt LSHIFT DOWN_ARROW   &mt LGUI RIGHT        &kp LA(ENTER)   &kp LG(TAB)
-&kp DELETE  &kp SQT            &kp EXCLAMATION  &kp AT_SIGN      &kp HASH              &trans                 &trans    &trans  &mt LSHIFT CAPSLOCK   &kp PAGE_UP             &mt RALT K_APPLICATION  &mt RSHIFT PAGE_DOWN  &trans   &kp LG(DOWN_ARROW)
-                                                &kp LA(LC(END))  &mo 3                 &trans                 &trans    &trans  &trans       &trans     &trans
+&trans      &trans             &trans           &trans           &trans                &trans                                   &kp LS(LG(UP_ARROW))  &kp LA(LS(LEFT_ARROW))             &kp LG(A)               &kp LA(LS(RIGHT))  &kp LS(LG(DOWN))       &kp LG(UP_ARROW)
+&kp TAB     &kp TILDE          &kp AMPERSAND    &kp ASTRK        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                    &kp LS(LG(LEFT))      &kp LG(LEFT_ARROW)                 &mt LGUI UP_ARROW       &kp LG(RIGHT)      &kp LS(LG(RIGHT))      &kp LS(LG(TAB))
+&kp ESCAPE  &kp DOUBLE_QUOTES  &kp DOLLAR       &kp PERCENT      &kp CARET             &trans                                   &mt LA(LSHIFT) ENTER  &mt LC(LGUI) LEFT_ARROW            &mt LSHIFT DOWN_ARROW   &mt RALT RIGHT     &mt LA(LSHIFT) ESCAPE  &kp LG(TAB)
+&kp DELETE  &kp SQT            &kp EXCLAMATION  &kp AT_SIGN      &kp HASH              &trans                 &trans    &trans  &trans                &mt LS(RIGHT_SHIFT) K_APPLICATION  &mt RALT K_APPLICATION  &kp PAGE_DOWN      &mt LEFT_SHIFT F12     &kp LG(DOWN_ARROW)
+                                                &kp LA(LC(END))  &mo 3                 &trans                 &trans    &trans  &trans                &kp ENTER                          &kp DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -84,11 +84,11 @@
 
         layer_4 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+&trans      &trans           &trans       &trans         &trans         &trans                              &trans             &trans           &trans         &trans       &trans           &trans
+&kp TAB     &kp N0           &kp N7       &mt LGUI N8    &kp N9         &kp N0                              &kp GRAVE          &kp N7           &mt LGUI N8    &kp N9       &kp N0           &kp BACKSPACE
+&kp ESCAPE  &mt LCTRL MINUS  &mt LALT N4  &mt LSHIFT N5  &mt LGUI N6    &mt LCTRL PLUS                      &mt LCTRL PLUS     &mt LGUI N4      &mt LSHIFT N5  &mt LALT N6  &mt LCTRL MINUS  &kp ENTER
+&kp DELETE  &kp SLASH        &kp N1       &mt LALT N2    &mt LSHIFT N3  &kp ASTERISK      &trans    &trans  &kp ASTERISK       &mt LSHIFT N1    &mt LALT N2    &kp N3       &kp SLASH        &kp DELETE
+                                          &kp DOT        &kp BACKSLASH  &kp LEFT_BRACKET  &trans    &trans  &kp RIGHT_BRACKET  &mt LSHIFT PIPE  &kp DOT
             >;
         };
     };
