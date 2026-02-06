@@ -36,16 +36,17 @@
             >;
         };
 
-        raise_layer {
-            display-name = "Raise";
-            bindings = <
-&none       &none      &kp LG(LA(LBKT))  &kp LG(LA(RBKT))  &none      &none                       &kp LG(LS(UP))    &kp LA(LS(LEFT))  &kp LG(A)               &kp LA(LS(RIGHT))  &kp LG(LS(DOWN))     &kp LG(UP)
-&kp TAB     &kp TILDE  &kp AMPS          &kp KP_MULTIPLY   &kp LPAR   &kp RPAR                    &kp LG(LS(LEFT))  &kp LG(LEFT)      &mt LGUI UP             &kp LG(RIGHT)      &kp LG(LS(RIGHT))    &kp LG(LS(TAB))
-&kp ESCAPE  &kp DQT    &kp DOLLAR        &kp PRCNT         &kp CARET  &none                       &kp RALT ENTER    &mt LGUI LEFT     &mt LSHIFT DOWN         &mt RALT RIGHT     &mt LS(LALT) ESCAPE  &kp LG(TAB)
-&kp DEL     &kp SQT    &kp EXCL          &kp AT            &kp HASH   &none     &trans    &trans  &none             &mt RSHIFT PG_UP  &mt RALT K_APPLICATION  &kp PG_DN          &mt LSHIFT F12       &kp LG(DOWN)
-                                         &none             &mo 3      &trans    &trans    &trans  &none             &kp ENTER         &kp DEL
-            >;
-        };
+raise_layer {
+    display-name = "Raise";
+    bindings = <
+&none       &none      &kp LG(LA(LBKT))  &kp LG(LA(RBKT))  &none      &none                       &kp LG(LS(UP))    &kp LA(LS(LEFT))  &kp LG(A)             &kp LA(LS(RIGHT))  &kp LG(LS(DOWN))     &kp LG(UP)
+&kp TAB     &kp TILDE  &kp AMPS          &kp KP_MULTIPLY   &kp LPAR   &kp RPAR                    &kp LG(LS(LEFT))  &kp LG(LEFT)      &mt LGUI UP           &kp LG(RIGHT)      &kp LG(LS(RIGHT))    &kp LG(LS(TAB))
+&kp ESCAPE  &kp DQT    &kp DOLLAR        &kp PRCNT         &kp CARET  &trans                      &kp RALT ENTER    &mt LGUI LEFT     &mt LSHIFT DOWN       &mt RALT RIGHT     &mt LS(LALT) ESCAPE  &kp LG(TAB)
+&kp DEL     &kp SQT    &kp EXCL          &kp AT            &kp HASH   &trans                      &trans            &trans            &trans                 &mt RSHIFT PG_UP   &mt RALT K_APPLICATION &kp PG_DN           &mt LSHIFT F12       &kp LG(DOWN)
+                                        &trans             &mo 3      &trans            &trans            &trans            &trans            &kp ENTER         &kp DEL
+    >;
+};
+
 
         layer_3 {
             bindings = <
