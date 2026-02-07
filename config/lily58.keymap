@@ -131,11 +131,11 @@
 
         layer_11 {
             bindings = <
-&kp MINUS     &kp N0         &kp N9      &kp N8                   &kp N7                  &kp N6                                  &kp  &kp  &kp  &kp  &kp  &kp
-&none         &kp P          &kp O       &kp I                    &kp U                   &kp Y                                   &kp  &kp  &kp  &kp  &kp  &kp
-&kp LG(RBKT)  &kp SEMICOLON  &kp L       &kp K                    &kp J                   &kp H                                   &kp  &kp  &kp  &kp  &kp  &kp
-&kp LG(LBKT)  &kp SLASH      &kp PERIOD  &kp COMMA                &kp M                   &kp N                   &none    &none  &kp  &kp  &kp  &kp  &kp  &kp
-                                         &kp LS(LA(LC(LG(F19))))  &kp LS(LA(LC(LG(F4))))  &kp LS(LA(LC(LG(F6))))  &none    &none  &kp  &kp  &kp
+&kp MINUS     &kp N0         &kp N9      &kp N8                   &kp N7                  &kp N6                                  &kp N5                  &kp N4                  &kp N3                   &kp N2  &kp N1  &kp GRAVE
+&none         &kp P          &kp O       &kp I                    &kp U                   &kp Y                                   &kp T                   &kp R                   &kp E                    &kp W   &kp Q   &none
+&kp LG(RBKT)  &kp SEMICOLON  &kp L       &kp K                    &kp J                   &kp H                                   &kp G                   &kp F                   &kp D                    &kp S   &kp A   &kp LG(RBKT)
+&kp LG(LBKT)  &kp SLASH      &kp PERIOD  &kp COMMA                &kp M                   &kp N                   &none    &none  &kp B                   &kp V                   &kp C                    &kp X   &kp Z   &kp LG(LBKT)
+                                         &kp LS(LA(LC(LG(F19))))  &kp LS(LA(LC(LG(F4))))  &kp LS(LA(LC(LG(F6))))  &none    &none  &kp LS(LA(LC(LG(F4))))  &kp LS(LA(LC(LG(F6))))  &kp LS(LA(LC(LG(F22))))
             >;
         };
 
