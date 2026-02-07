@@ -19,7 +19,7 @@
 &mt LEFT_CONTROL TAB  &lt 8 Q   &kp W       &mt LGUI E       &kp R       &kp T                            &kp LC(Y)    &kp U        &mt LGUI I           &kp O            &lt 8 P           &kp BACKSPACE
 &mt LSHIFT ESCAPE     &lt 12 A  &mt RALT S  &mt LSHIFT D     &mt LGUI F  &mt LCTRL G                      &mt LCTRL H  &mt RGUI J   &mt RSHIFT K         &mt RIGHT_ALT L  &lt 15 SEMICOLON  &mt LSHIFT ENTER
 &mt LS(LGUI) DELETE   &lt 11 Z  &kp X       &mt RIGHT_ALT C  &kp C       &mt LSHIFT V     &none    &none  &lt 9 N      &kp M        &mt RIGHT_ALT COMMA  &kp DOT          &lt 11 SLASH      &mt LGUI DELETE
-                                            &kp CAPS         &lt 6 TAB   &lt 8 BACKSPACE  &none    &none  &lt 2 SPACE  &lt 6 ENTER  &kp CAPS
+                                            &kp CAPS         &lt 7 TAB   &lt 8 BACKSPACE  &none    &none  &lt 2 SPACE  &lt 7 ENTER  &kp CAPS
             >;
         };
 
@@ -49,7 +49,7 @@
 &kp TAB     &kp TILDE          &kp AMPERSAND             &kp ASTERISK               &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                  &kp LS(LG(LEFT))      &kp LG(LEFT)        &mt LGUI UP                  &kp LG(RIGHT)       &kp LG(LS(RIGHT))        &kp LS(LG(TAB))
 &kp ESCAPE  &kp DOUBLE_QUOTES  &kp DOLLAR                &kp PERCENT                &kp LCTRL             &none                                  &kp LA(ENTER)         &mt LGUI LEFT       &mt LSHIFT DOWN              &mt LEFT_ALT RIGHT  &mt LS(LEFT_ALT) ESCAPE  &kp LG(TAB)
 &kp DELETE  &kp SQT            &kp EXCLAMATION           &kp AT_SIGN                &kp HASH              &none                  &none    &none  &none                 &mt RSHIFT PAGE_UP  &mt RIGHT_ALT K_APPLICATION  &kp PAGE_DOWN       &mt LSHIFT F12           &kp LG(DOWN)
-                                                         &none                      &mo 6                 &none                  &none    &none  &none                 &kp ENTER           &kp DELETE
+                                                         &none                      &mo 7                 &none                  &none    &none  &none                 &kp ENTER           &kp DELETE
             >;
         };
 
@@ -77,19 +77,9 @@
         };
 
         layer_6 {
-            bindings = <
-&trans   &trans     &trans  &trans   &trans    &trans                          &trans        &trans        &trans   &trans  &trans     &trans
-&kp TAB  &kp N0     &kp N7  &kp N8   &kp N9    &kp N0                          &kp GRAVE     &kp N7        &kp N8   &kp N9  &kp N0     &kp BSPC
-&kp ESC  &kp MINUS  &kp N4  &kp N5   &kp N6    &kp PLUS                        &kp PLUS      &kp N4        &kp N5   &kp N6  &kp MINUS  &kp RET
-&kp DEL  &kp FSLH   &kp N1  &kp N2   &kp N3    &kp LS(STAR)  &trans    &trans  &kp LS(STAR)  &kp N1        &kp N2   &kp N3  &kp FSLH   &kp DEL
-                            &kp DOT  &kp BSLH  &kp LBKT      &trans    &trans  &kp RBKT      &kp LS(PIPE)  &kp DOT
-            >;
-        };
-
-        layer_7 {
             display-name = "1";
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans     &trans     &trans           &trans    &trans    &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans     &trans     &trans           &trans    &trans    &bootloader
 &kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                          &kp F7     &kp F8     &kp F9           &kp F10   &kp F11   &kp F12
 &kp GRAVE   &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PRCNT                       &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp TILDE
 &trans      &trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans     &kp MINUS  &kp KP_PLUS      &kp LBRC  &kp RBRC  &kp PIPE
@@ -97,6 +87,16 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+        };
+
+        layer_7 {
+            bindings = <
+&trans   &trans           &trans           &trans         &trans         &trans                            &trans        &trans    &trans   &trans  &trans     &trans
+&kp TAB  &kp N0           &kp N7           &mt LGUI N8    &kp N9         &kp N0                            &kp GRAVE     &kp N7    &kp N8   &kp N9  &kp N0     &kp BSPC
+&kp ESC  &mt LCTRL MINUS  &mt LEFT_ALT N4  &mt LSHIFT N5  &mt LGUI N6    &mt LCTRL PLUS                    &kp PLUS      &kp N4    &kp N5   &kp N6  &kp MINUS  &kp RET
+&kp DEL  &kp FSLH         &kp N1           &mt LALT N2    &mt LSHIFT N3  &kp ASTERISK    &trans    &trans  &kp ASTERISK  &kp N1    &kp N2   &kp N3  &kp FSLH   &kp DEL
+                                           &kp DOT        &kp BSLH       &kp LBKT        &trans    &trans  &kp RBKT      &kp PIPE  &kp DOT
+            >;
         };
 
         layer_8 {
