@@ -120,6 +120,11 @@
             key-positions = <55 21>;
             require-prior-idle-ms = <100>;
         };
+
+        Q_ {
+            bindings = <&kp LS(Q)>;
+            key-positions = <26 25>;
+        };
     };
 
     macros {
@@ -139,9 +144,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <250>;
-            hold-trigger-key-positions = <25 26 27 28 29 15 39 40 41 37 30 31 32 33 34 20 45 44 46 48 38 13 14 16 17 18 19 21 22 47>;
             flavor = "tap-preferred";
-            require-prior-idle-ms = <100>;
         };
     };
 
