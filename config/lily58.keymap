@@ -131,11 +131,11 @@
 
         layer_11 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+&kp MINUS     &kp N0         &kp N9      &kp N8                   &kp N7                  &kp N6                                  &kp  &kp  &kp  &kp  &kp  &kp
+&none         &kp P          &kp O       &kp I                    &kp U                   &kp Y                                   &kp  &kp  &kp  &kp  &kp  &kp
+&kp LG(RBKT)  &kp SEMICOLON  &kp L       &kp K                    &kp J                   &kp H                                   &kp  &kp  &kp  &kp  &kp  &kp
+&kp LG(LBKT)  &kp SLASH      &kp PERIOD  &kp COMMA                &kp M                   &kp N                   &none    &none  &kp  &kp  &kp  &kp  &kp  &kp
+                                         &kp LS(LA(LC(LG(F19))))  &kp LS(LA(LC(LG(F4))))  &kp LS(LA(LC(LG(F6))))  &none    &none  &kp  &kp  &kp
             >;
         };
 
