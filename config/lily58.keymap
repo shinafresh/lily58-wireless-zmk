@@ -9,89 +9,71 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    keymap {
-        compatible = "zmk,keymap";
-
-        layer_0 {
-            display-name = "0";
-            bindings = <
-&kp ESC    &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                         &kp N6  &kp N7    &kp N8     &kp N9   &kp N0    &kp GRAVE
-&kp TAB    &kp Q   &kp W   &kp E     &kp R     &kp T                          &kp Y   &kp U     &kp I      &kp O    &kp P     &kp MINUS
-&kp LCTRL  &kp A   &kp S   &kp D     &kp F     &kp G                          &kp H   &kp J     &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z   &kp X   &kp C     &kp V     &kp B   &kp LBKT     &kp RBKT  &kp N   &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                           &kp LALT  &kp LGUI  &mo 1   &kp SPACE    &kp RET   &mo 2   &kp BSPC  &kp RGUI
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
-        };
-
-        layer_1 {
-            display-name = "1";
-            bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans     &trans     &trans           &trans    &trans    &trans
-&kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                          &kp F7     &kp F8     &kp F9           &kp F10   &kp F11   &kp F12
-&kp GRAVE   &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PRCNT                       &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp TILDE
-&trans      &trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans     &kp MINUS  &kp KP_PLUS      &kp LBRC  &kp RBRC  &kp PIPE
-                                        &trans        &trans        &trans        &trans    &trans  &trans     &trans     &trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
-        };
-
-        layer_2 {
-            display-name = "2";
-            bindings = <
-&trans     &trans  &trans  &trans   &trans   &trans                     &trans       &trans     &trans     &trans    &trans     &trans
-&kp GRAVE  &kp N1  &kp N2  &kp N3   &kp N4   &kp N5                     &kp N6       &kp N7     &kp N8     &kp N9    &kp N0     &trans
-&kp F1     &kp F2  &kp F3  &kp F4   &kp F5   &kp F6                     &trans       &kp LEFT   &kp DOWN   &kp UP    &kp RIGHT  &trans
-&kp F7     &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &trans    &trans  &kp KP_PLUS  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT   &kp BSLH
-                           &trans   &trans   &trans   &trans    &trans  &trans       &trans     &trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
-        };
-
-        layer_3 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &kp G                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
-            >;
-        };
-
-
-        layer_4 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &kp G                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
-            >;
-        };
-
-
-        layer_5 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &kp F  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
-            >;
-        };
-
-
-        layer_6 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &kp D  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
-            >;
+  layer0 {
+          bindings = <
+          &kp GRAVE &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp MINUS &mt LEFT_CONTROL TAB &lt 8 Q &kp W &mt LEFT_GUI E &kp R &kp T &kp Y &kp U &mt LEFT_GUI I &kp O &lt 8 P &mt LEFT_CONTROL BACKSPACE &mt LEFT_SHIFT ESCAPE &lt 12 A &mt RIGHT_ALT S &mt LEFT_SHIFT D &mt LEFT_GUI F &mt LEFT_CONTROL G &mt LEFT_CONTROL H &mt RIGHT_GUI J &mt RIGHT_SHIFT K &mt RIGHT_ALT L &lt 15 SEMICOLON &mt LEFT_SHIFT ENTER &mt LS(LEFT_GUI) DELETE &lt 11 Z &kp X &mt RIGHT_ALT C &mt RIGHT_SHIFT V &lt 9 B &lt 9 N &kp M &mt RIGHT_ALT COMMA &kp DOT &lt 11 SLASH &mt LS(LEFT_GUI) DELETE &kp CAPSLOCK &lt 7 TAB &lt 4 BACKSPACE &lt 5 SPACE &lt 7 ENTER &kp CAPSLOCK
+          >;
+        };layer1 {
+          bindings = <
+          &kp GRAVE &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp MINUS &mt LEFT_GUI TAB &lt 8 Q &kp W &mt LEFT_CONTROL E &kp R &kp T &kp Y &kp U &mt LEFT_CONTROL I &kp O &lt 8 P &mt LEFT_GUI BACKSPACE &mt LEFT_SHIFT ESCAPE &lt 12 A &mt LEFT_ALT S &mt LEFT_SHIFT D &mt LEFT_CONTROL F &mt LEFT_GUI G &mt LEFT_GUI H &mt LEFT_CONTROL J &mt LEFT_SHIFT K &mt LEFT_ALT L &lt 13 SEMICOLON &mt LEFT_SHIFT ENTER &mt LS(LEFT_CONTROL) DELETE &lt 10 Z &kp X &mt LEFT_ALT C &mt LEFT_SHIFT V &lt 9 B &lt 9 N &kp M &mt LEFT_ALT COMMA &kp DOT &lt 10 SLASH &mt LS(LEFT_CONTROL) DELETE &kp ESCAPE &lt 7 TAB &lt 2 BACKSPACE &lt 3 SPACE &lt 7 ENTER &kp DELETE
+          >;
+        };layer2 {
+          bindings = <
+          &kp LC(F20) &kp LC(F20) &kp LC(F20) &kp LC(A) &kp LC(F20) &kp LC(F20) &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &none &none &kp EQUAL &kp LC(PAGE_UP) &none &kp HOME &mt LEFT_CONTROL UP &kp END &none &kp GRAVE &kp N7 &mt RIGHT_CONTROL N8 &kp N9 &kp N0 &kp BACKSPACE &kp LC(PAGE_DOWN) &mt LS(LEFT_CONTROL) ENTER &mt LEFT_ALT LEFT &mt LEFT_SHIFT DOWN &mt LEFT_CONTROL RIGHT &mt LEFT_GUI F2 &kp KP_PLUS &mt LEFT_CONTROL N4 &mt LEFT_SHIFT N5 &mt LEFT_ALT N6 &mt LEFT_GUI MINUS &kp ENTER &kp LC(TAB) &mt LEFT_SHIFT F12 &kp PAGE_UP &mt LEFT_ALT K_APPLICATION &mt LEFT_SHIFT PAGE_DOWN &kp F4 &none &kp N1 &mt LEFT_ALT N2 &kp N3 &kp SLASH &kp DELETE &kp ESCAPE &kp TAB &none &kp SPACE &kp ENTER &kp DOT
+          >;
+        };layer3 {
+          bindings = <
+          &kp GRAVE &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp LC(F20) &kp LC(F20) &kp LC(A) &kp LC(F20) &kp LC(F20) &kp LC(F20) &kp TAB &none &none &none &none &none &none &kp HOME &mt LEFT_CONTROL UP &kp END &none &kp LC(PAGE_UP) &kp ESCAPE &none &none &none &none &mt LEFT_SHIFT F20 &mt LEFT_GUI F2 &mt LEFT_CONTROL LEFT &mt LEFT_SHIFT DOWN &mt LEFT_ALT RIGHT &mt LS(LEFT_CONTROL) ESCAPE &kp LC(PAGE_DOWN) &kp DELETE &kp QUOTE &none &none &none &mt LEFT_SHIFT F20 &kp F4 &mt LEFT_SHIFT PAGE_UP &mt LEFT_ALT K_APPLICATION &mt LEFT_SHIFT PAGE_DOWN &mt LEFT_SHIFT F12 &kp LC(TAB) &mt LEFT_SHIFT F20 &mo 6 &mt LEFT_SHIFT F20 &none &kp ENTER &kp DELETE
+          >;
+        };layer4 {
+          bindings = <
+          &kp LG(UP) &kp LG(F20) &kp LA(F20) &kp LG(A) &kp LA(F20) &kp LG(F20) &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &none &none &kp EQUAL &kp LG(F20) &kp LG(F20) &kp LG(LEFT) &mt LEFT_GUI UP &kp LG(RIGHT) &kp LG(F20) &kp GRAVE &kp N7 &mt LEFT_GUI N8 &kp N9 &kp N0 &kp BACKSPACE &kp LG(TAB) &mt LA(LEFT_SHIFT) ENTER &mt LEFT_ALT LEFT &mt LEFT_SHIFT DOWN &mt LEFT_GUI RIGHT &kp LA(ENTER) &kp KP_PLUS &mt LEFT_GUI N4 &mt LEFT_SHIFT N5 &mt LEFT_ALT N6 &mt LEFT_CONTROL MINUS &kp ENTER &kp LG(DOWN) &mt LEFT_SHIFT CAPSLOCK &kp PAGE_UP &mt RIGHT_ALT K_APPLICATION &mt RIGHT_SHIFT PAGE_DOWN &none &none &kp N1 &mt LEFT_ALT N2 &kp N3 &kp SLASH &kp DELETE &kp ESCAPE &kp TAB &none &kp SPACE &kp ENTER &kp DOT
+          >;
+        };layer5 {
+          bindings = <
+          &none &none &kp LG(F20) &kp LG(F20) &none &none &kp LG(F20) &kp LA(F20) &kp LG(A) &kp LA(F20) &kp LG(F20) &kp LG(UP) &kp TAB &none &none &none &none &none &kp LG(F20) &kp LG(LEFT) &mt LEFT_GUI UP &kp LG(RIGHT) &kp LG(F20) &kp LG(F20) &kp ESCAPE &none &none &none &none &mt LEFT_SHIFT F20 &kp LA(ENTER) &mt LEFT_GUI LEFT &mt LEFT_SHIFT DOWN &mt RIGHT_ALT RIGHT &mt LA(LEFT_SHIFT) ESCAPE &kp LG(TAB) &kp DELETE &kp QUOTE &none &none &none &mt LEFT_SHIFT F20 &none &mt RIGHT_SHIFT PAGE_UP &mt RIGHT_ALT K_APPLICATION &kp PAGE_DOWN &mt LEFT_SHIFT F12 &kp LG(DOWN) &mt LEFT_SHIFT F20 &mo 6 &mt LEFT_SHIFT F20 &none &kp ENTER &kp DELETE
+          >;
+        };layer6 {
+          bindings = <
+          &to 1 &to 0 &kp INSERT &kp LOCKING_NUM &kp CAPSLOCK &none &none &none &none &none &none &none &none &none &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &kp C_VOLUME_DOWN &kp C_VOLUME_UP &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &none &none &to 3 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &kp C_AL_CALCULATOR &kp C_AL_CALCULATOR &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &none &to 5 &none &to 12 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &to 12 &none &kp LA(F20) &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &kp LA(F20)
+          >;
+        };layer7 {
+          bindings = <
+          &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &kp TAB &kp N0 &kp N7 &mt LEFT_GUI N8 &kp N9 &kp N0 &kp GRAVE &kp N7 &mt LEFT_GUI N8 &kp N9 &kp N0 &kp BACKSPACE &kp ESCAPE &mt LEFT_CONTROL MINUS &mt LEFT_ALT N4 &mt LEFT_SHIFT N5 &mt LEFT_GUI N6 &mt LEFT_CONTROL KP_PLUS &mt LEFT_CONTROL KP_PLUS &mt LEFT_GUI N4 &mt LEFT_SHIFT N5 &mt LEFT_ALT N6 &mt LEFT_CONTROL MINUS &kp ENTER &kp DELETE &kp SLASH &kp N1 &mt LEFT_ALT N2 &mt LEFT_SHIFT N3 &none &none &mt LEFT_SHIFT N1 &mt LEFT_ALT N2 &kp N3 &kp SLASH &kp DELETE &kp DOT &kp BACKSLASH &kp LEFT_BRACKET &kp RIGHT_BRACKET &none &kp DOT
+          >;
+        };layer8 {
+          bindings = <
+          &kp MINUS &kp N0 &kp N9 &kp N8 &kp N7 &kp N6 &kp N5 &kp N4 &kp N3 &kp N2 &kp N1 &kp GRAVE &kp LC(F4) &none &kp LA(N7) &kp LA(N8) &kp LA(N9) &kp LA(N0) &kp LA(N0) &kp LA(N7) &kp LA(N8) &kp LA(N9) &none &kp LC(F4) &none &none &kp LA(N4) &kp LA(N5) &kp LA(N6) &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &kp LA(N4) &kp LA(N5) &kp LA(N6) &none &none &none &none &kp LA(N1) &kp LA(N2) &kp LA(N3) &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &kp LA(N1) &kp LA(N2) &kp LA(N3) &none &none &kp LC(F5) &kp LC(F6) &kp LC(F7) &kp LC(F7) &kp LC(F6) &kp LC(F5)
+          >;
+        };layer9 {
+          bindings = <
+          &none &none &none &kp LC(F20) &none &none &kp F19 &none &none &none &none &none &kp LC(F20) &kp LC(F20) &kp LC(F20) &kp LC(F20) &kp LC(F20) &kp LC(F20) &kp F16 &kp F7 &kp F8 &kp F9 &kp F10 &kp F13 &kp LC(F20) &kp LC(F20) &kp LC(F20) &kp LC(F20) &kp LC(F20) &kp LC(F20) &kp F17 &kp F4 &kp F5 &kp F6 &kp F11 &kp F14 &kp LC(F20) &kp LC(F20) &kp LC(F20) &kp LC(F20) &kp LC(F20) &kp LC(F20) &kp F18 &kp F1 &kp F2 &kp F3 &kp F12 &kp F15 &kp LC(F20) &kp LC(F20) &kp LG(Q) &kp LC(F20) &kp LC(F20) &kp LC(F20)
+          >;
+        };layer10 {
+          bindings = <
+          &kp MINUS &kp N0 &kp N9 &kp N8 &kp N7 &kp N6 &kp N5 &kp N4 &kp N3 &kp N2 &kp N1 &kp GRAVE &none &kp P &kp O &mt LEFT_CONTROL I &kp U &kp Y &kp T &kp R &mt LEFT_CONTROL E &kp W &kp Q &none &kp LA(RIGHT) &mt LEFT_GUI SEMICOLON &mt LEFT_ALT L &mt LEFT_SHIFT K &mt LEFT_CONTROL J &kp H &kp G &mt LEFT_CONTROL F &mt LEFT_SHIFT D &mt LEFT_ALT S &mt LEFT_GUI A &kp LA(RIGHT) &kp LA(LEFT) &kp SLASH &kp DOT &mt LEFT_ALT COMMA &mt LEFT_SHIFT M &kp N &kp B &mt LEFT_SHIFT V &mt LEFT_ALT C &kp X &kp Z &kp LA(LEFT) &kp LG(F20) &kp LG(LEFT) &kp LG(RIGHT) &kp LG(LEFT) &kp LG(RIGHT) &kp LG(F20)
+          >;
+        };layer11 {
+          bindings = <
+          &kp MINUS &kp N0 &kp N9 &kp N8 &kp N7 &kp N6 &kp N5 &kp N4 &kp N3 &kp N2 &kp N1 &kp GRAVE &none &kp P &kp O &kp I &kp U &kp Y &kp T &kp R &mt LEFT_GUI E &kp W &kp Q &none &kp LG(RIGHT_BRACKET) &kp SEMICOLON &kp L &kp K &kp J &kp H &kp G &mt LEFT_GUI F &mt LEFT_SHIFT D &mt LEFT_ALT S &mt LEFT_CONTROL A &kp LG(RIGHT_BRACKET) &kp LG(LEFT_BRACKET) &kp SLASH &kp DOT &kp COMMA &kp M &kp N &kp B &mt LEFT_SHIFT V &mt RIGHT_ALT C &kp X &kp Z &kp LG(LEFT_BRACKET) &kp LC(F20) &kp LC(F20) &kp LC(F20) &kp LC(F20) &kp LC(F20) &kp LC(F20)
+          >;
+        };layer12 {
+          bindings = <
+          &to 1 &none &kp LG(LEFT_BRACKET) &kp LG(RIGHT_BRACKET) &none &none &none &none &kp LG(LEFT_BRACKET) &kp LG(RIGHT_BRACKET) &none &to 0 &none &none &none &none &none &none &none &kp HOME &none &kp END &none &none &mt LEFT_SHIFT F20 &none &none &none &none &kp LC(UP) &none &none &none &none &none &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &none &none &none &none &none &none &kp PAGE_UP &none &kp PAGE_DOWN &none &mt LEFT_SHIFT F20 &none &none &none &none &none &none
+          >;
+        };layer13 {
+          bindings = <
+          &kp GRAVE &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp MINUS &none &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &none &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &none &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &kp COMMA &kp DOT &kp SLASH &mt LEFT_SHIFT F20 &kp ESCAPE &kp TAB &kp BACKSPACE &lt 14 SPACE &kp ENTER &kp DELETE
+          >;
+        };layer14 {
+          bindings = <
+          &kp GRAVE &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp MINUS &none &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &none &none &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &none &none &none &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &kp COMMA &kp DOT &kp SLASH &none &kp ESCAPE &kp TAB &kp BACKSPACE &kp SPACE &kp ENTER &kp DELETE
+          >;
+        };layer15 {
+          bindings = <
+          &kp GRAVE &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp MINUS &none &kp LA(Q) &kp LA(W) &kp LA(E) &kp LA(R) &kp LA(T) &kp LA(Y) &kp LA(U) &kp LA(I) &kp LA(O) &kp LA(P) &none &mt LEFT_SHIFT F20 &kp LA(A) &kp LA(S) &kp LA(D) &kp LA(F) &kp LA(G) &kp LA(H) &kp LA(J) &kp LA(K) &kp LA(L) &none &mt LEFT_SHIFT F20 &mt LEFT_SHIFT F20 &kp LA(Z) &kp LA(X) &kp LA(C) &kp LA(V) &kp LA(B) &kp LA(N) &kp LA(M) &kp COMMA &kp DOT &kp SLASH &mt LEFT_SHIFT F20 &kp ESCAPE &kp TAB &kp BACKSPACE &mt LEFT_SHIFT SPACE &kp ENTER &kp DELETE
+          >;
         };
     };
-};
+  };
+  
