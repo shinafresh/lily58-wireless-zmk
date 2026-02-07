@@ -200,7 +200,7 @@
             bindings = <
 &none       &none              &kp LA(LG(LEFT_BRACKET))  &kp LA(LG(RIGHT_BRACKET))  &none                 &none                                  &kp LS(LG(UP_ARROW))  &kp LA(LS(LEFT))    &kp LG(A)                    &kp LA(LS(RIGHT))   &kp LS(LG(DOWN))         &kp LG(UP)
 &kp TAB     &kp TILDE          &kp AMPERSAND             &kp ASTERISK               &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                  &kp LS(LG(LEFT))      &kp LG(LEFT)        &mt LGUI UP                  &kp LG(RIGHT)       &kp LG(LS(RIGHT))        &kp LS(LG(TAB))
-&kp ESCAPE  &kp DOUBLE_QUOTES  &kp DOLLAR                &kp PERCENT                &kp LCTRL             &none                                  &kp LA(ENTER)         &mt LGUI LEFT       &mt LSHIFT DOWN              &mt LEFT_ALT RIGHT  &mt LS(LEFT_ALT) ESCAPE  &kp LG(TAB)
+&kp ESCAPE  &kp DOUBLE_QUOTES  &kp DOLLAR                &kp PERCENT                &kp CARET             &none                                  &kp LA(ENTER)         &mt LGUI LEFT       &mt LSHIFT DOWN              &mt LEFT_ALT RIGHT  &mt LS(LEFT_ALT) ESCAPE  &kp LG(TAB)
 &kp DELETE  &kp SQT            &kp EXCLAMATION           &kp AT_SIGN                &kp HASH              &none                  &none    &none  &none                 &mt RSHIFT PAGE_UP  &mt RIGHT_ALT K_APPLICATION  &kp PAGE_DOWN       &mt LSHIFT F12           &kp LG(DOWN)
                                                          &none                      &mo 6                 &none                  &none    &none  &none                 &kp ENTER           &kp DELETE
             >;
