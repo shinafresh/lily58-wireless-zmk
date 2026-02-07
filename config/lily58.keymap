@@ -175,11 +175,11 @@
 
         layer_15 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &kp D   &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+&kp GRAVE  &kp N1     &kp N2     &kp N3     &kp N4     &kp N5                     &kp N6            &kp N7     &kp N8     &kp N9     &kp N0     &kp MINUS
+&kp TAB    &kp LA(Q)  &kp LA(W)  &kp LA(E)  &kp LA(R)  &kp LA(T)                  &kp LA(Y)         &kp LA(U)  &kp LA(I)  &kp LA(O)  &kp LA(P)  &kp BSPC
+&kp ESC    &kp LA(A)  &kp LA(S)  &kp LA(D)  &kp LA(F)  &kp LA(G)                  &kp LA(H)         &kp LA(J)  &kp LA(K)  &kp LA(L)  &none      &kp RET
+&kp DEL    &kp LA(Z)  &kp LA(X)  &kp LA(C)  &kp LA(V)  &kp LA(B)  &none    &none  &kp LA(N)         &kp LA(M)  &kp COMMA  &kp DOT    &kp FSLH   &kp DEL
+                                 &kp ESC    &kp TAB    &kp BSPC   &none    &none  &mt LSHIFT SPACE  &kp ENTER  &kp DEL
             >;
         };
     };
