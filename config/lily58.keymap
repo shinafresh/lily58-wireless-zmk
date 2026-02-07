@@ -138,10 +138,10 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <130>;
+            tapping-term-ms = <250>;
+            require-prior-idle-ms = <150>;
             flavor = "tap-preferred";
-            hold-trigger-key-positions = <25 26 27 28 15 29 12 39 40 31 32 33 34 20 46 45 30>;
+            hold-trigger-key-positions = <25 26 27 28 29 30 31 32 33 34 46 45 20 15 39 40>;
         };
     };
 
@@ -346,7 +346,7 @@
         compatible = "zmk,conditional-layers";
 
         tri {
-            if-layers = <2 1>;
+            if-layers = <2 3>;
             then-layer = <6>;
         };
     };
