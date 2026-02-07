@@ -10,6 +10,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 / {
     keymap {
@@ -144,11 +145,11 @@
 
         layer_12 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &none   &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+&none  &none  &kp LG(LBKT)  &kp LG(RBKT)  &none  &none                     &none           &none           &kp LG(LBKT)       &kp LG(RBKT)     &none            &none
+&none  &none  &none         &none         &none  &none                     &msc SCRL_LEFT  &kp HOME        &mmv MOVE_UP       &kp END          &msc SCRL_RIGHT  &none
+&none  &none  &none         &none         &none  &none                     &msc SCRL_UP    &mmv MOVE_LEFT  &mmv MOVE_DOWN     &mmv MOVE_RIGHT  &mkp MB2         &none
+&none  &none  &none         &none         &none  &none     &none    &none  &msc SCRL_DOWN  &kp PAGE_UP     &kp K_APPLICATION  &kp PAGE_DOWN    &none            &none
+                            &none         &none  &mkp MB1  &none    &none  &mkp MB1        &mkp MB2        &mkp MB3
             >;
         };
 
