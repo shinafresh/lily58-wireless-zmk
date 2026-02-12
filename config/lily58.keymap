@@ -164,11 +164,11 @@
         layer_0 {
             display-name = "0";
             bindings = <
-&kp GRAVE             &kp N1      &kp N2        &kp N3           &kp N4              &kp N5                           &kp N6         &kp N7        &kp N8                 &kp N9             &kp N0              &kp GRAVE
-&mt LEFT_CONTROL TAB  &hmLT 8 Q   &kp W         &hmMT LGUI E     &kp R               &kp T                            &kp Y          &kp U         &hmMT LGUI I           &kp O              &hmLT 8 P           &kp BACKSPACE
-&mt LSHIFT ESCAPE     &hmLT 12 A  &hmMT RALT S  &hmMT LSHIFT D   &hmMT LGUI F        &hmMT LCTRL G                    &hmMT LCTRL H  &hmMT RGUI J  &hmMT RSHIFT K         &hmMT RIGHT_ALT L  &hmLT 15 SEMICOLON  &mt LSHIFT ENTER
-&mt LS(LGUI) DELETE   &hmLT 11 Z  &kp X         &mt RIGHT_ALT C  &hmMT LEFT_SHIFT V  &hmLT 9 B        &none    &none  &hmLT 9 N      &kp M         &hmMT RIGHT_ALT COMMA  &kp DOT            &hmLT 11 SLASH      &mt LGUI DELETE
-                                                &kp CAPS         &lt 7 TAB           &lt 2 BACKSPACE  &none    &none  &lt 3 SPACE    &lt 7 ENTER   &kp CAPS
+&kp GRAVE             &kp N1    &kp N2        &kp N3           &kp N4              &kp N5                           &kp N6         &kp N7        &kp N8                 &kp N9             &kp N0            &kp MINUS
+&mt LEFT_CONTROL TAB  &lt 8 Q   &kp W         &hmMT LGUI E     &kp R               &kp T                            &kp Y          &kp U         &hmMT LGUI I           &kp O              &lt 8 P           &kp BACKSPACE
+&mt LSHIFT ESCAPE     &lt 12 A  &hmMT RALT S  &hmMT LSHIFT D   &hmMT LGUI F        &hmMT LCTRL G                    &hmMT LCTRL H  &hmMT RGUI J  &hmMT RSHIFT K         &hmMT RIGHT_ALT L  &lt 15 SEMICOLON  &mt LSHIFT ENTER
+&mt LS(LGUI) DELETE   &lt 11 Z  &kp X         &mt RIGHT_ALT C  &hmMT LEFT_SHIFT V  &lt 9 B          &none    &none  &lt 9 N        &kp M         &hmMT RIGHT_ALT COMMA  &kp DOT            &lt 11 SLASH      &mt LGUI DELETE
+                                              &kp CAPS         &lt 7 TAB           &lt 2 BACKSPACE  &none    &none  &lt 3 SPACE    &lt 7 ENTER   &kp CAPS
             >;
         };
 
