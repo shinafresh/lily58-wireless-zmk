@@ -187,7 +187,7 @@
         layer_2 {
             bindings = <
 &kp LG(UP)       &kp LS(LG(UP))          &kp LS(LA(LEFT))   &kp LG(A)                    &kp LA(LS(RIGHT))     &kp LS(LG(DOWN))                    &none         &none        &none            &none        &none            &kp EQUAL
-&kp LS(LG(TAB))  &kp LS(LG(LEFT))        &kp LG(LEFT)       &kp LG(UP)                   &kp LG(RIGHT)         &kp LS(LG(RIGHT))                   &kp GRAVE     &kp N7       &mt LGUI N8      &kp N9       &kp N0           &kp BACKSLASH
+&kp LS(LG(TAB))  &kp LS(LG(LEFT))        &kp LG(LEFT)       &kp LG(UP)                   &kp LG(RIGHT)         &kp LS(LG(RIGHT))                   &kp GRAVE     &kp N7       &mt LGUI N8      &kp N9       &kp N0           &kp BACKSPACE
 &kp LG(TAB)      &mt LS(LEFT_ALT) ENTER  &mt LEFT_ALT LEFT  &mt LSHIFT DOWN              &mt LGUI RIGHT        &mt LEFT_ALT ENTER                  &kp PLUS      &mt LGUI N4  &mt LSHFT N5     &mt LALT N6  &mt LCTRL MINUS  &kp ENTER
 &kp LG(DOWN)     &mt LSHIFT CAPS         &kp PAGE_UP        &mt RIGHT_ALT K_APPLICATION  &mt RSHIFT PAGE_DOWN  &none               &none    &none  &kp ASTERISK  &kp N1       &mt LEFT_ALT N2  &kp N3       &kp SLASH        &kp DELETE
                                                             &kp ESCAPE                   &kp TAB               &none               &none    &none  &kp SPACE     &kp ENTER    &kp DOT
@@ -272,11 +272,11 @@
 
         layer_9 {
             bindings = <
-&trans                   &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&kp LS(LA(LC(LG(F13))))  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans                   &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans                   &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                                         &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                   &trans  &trans  &trans  &trans  &trans  &trans
+&kp LS(LA(LC(LG(F13)))  &kp LS(LA(LC(LG(F16))))  &kp LS(LA(LC(LG(F7))))  &kp LS(LA(LC(LG(F8))))  &kp LS(LA(LC(LG(F9))))  &kp LS(LA(LC(LG(F8))))                    &trans  &trans  &trans  &trans  &trans  &trans
+&kp LS(LA(LC(LG(F14))))  &kp LS(LA(LC(LG(F17))))  &kp LS(LA(LC(LG(F4))))  &kp LS(LA(LC(LG(F5))))  &kp LS(LA(LC(LG(F6))))  &kp LS(LA(LC(LG(F5))))                    &trans  &trans  &trans  &trans  &trans  &trans
+&kp LS(LA(LC(LG(F15))))  &kp LS(LA(LC(LG(F18))))  &kp LS(LA(LC(LG(F1))))  &kp LS(LA(LC(LG(F2))))  &kp LS(LA(LC(LG(F3))))  &kp LS(LA(LC(LG(F12))))  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                         &kp LS(LA(LC(LG(N))))  &kp LS(LA(LC(LG(X))))  &kp LG(Q)  &trans    &trans  &trans  &trans  &trans
             >;
 
             label = "9";
