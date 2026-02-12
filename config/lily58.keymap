@@ -164,11 +164,11 @@
         layer_0 {
             display-name = "0";
             bindings = <
-&kp GRAVE             &kp N1    &kp N2        &kp N3           &kp N4              &kp N5                           &kp N6         &kp N7        &kp N8                 &kp N9             &kp N0            &kp MINUS
-&mt LEFT_CONTROL TAB  &lt 8 Q   &kp W         &hmMT LGUI E     &kp R               &kp T                            &kp Y          &kp U         &hmMT LGUI I           &kp O              &lt 8 P           &kp BACKSPACE
-&mt LSHIFT ESCAPE     &lt 12 A  &hmMT RALT S  &hmMT LSHIFT D   &hmMT LGUI F        &hmMT LCTRL G                    &hmMT LCTRL H  &hmMT RGUI J  &hmMT RSHIFT K         &hmMT RIGHT_ALT L  &lt 15 SEMICOLON  &mt LSHIFT ENTER
-&mt LS(LGUI) DELETE   &lt 11 Z  &kp X         &mt RIGHT_ALT C  &hmMT LEFT_SHIFT V  &lt 9 B          &none    &none  &lt 9 N        &kp M         &hmMT RIGHT_ALT COMMA  &kp DOT            &lt 11 SLASH      &mt LGUI DELETE
-                                              &kp CAPS         &lt 7 TAB           &lt 2 BACKSPACE  &none    &none  &lt 3 SPACE    &lt 7 ENTER   &kp CAPS
+&kp GRAVE             &kp N1    &kp N2        &kp N3             &kp N4              &kp N5                           &kp N6         &kp N7        &kp N8                 &kp N9             &kp N0            &kp MINUS
+&mt LEFT_CONTROL TAB  &lt 8 Q   &kp W         &hmMT LGUI E       &kp R               &kp T                            &kp Y          &kp U         &hmMT LGUI I           &kp O              &lt 8 P           &kp BACKSPACE
+&mt LSHIFT ESCAPE     &lt 12 A  &hmMT RALT S  &hmMT LSHIFT D     &hmMT LGUI F        &hmMT LCTRL G                    &hmMT LCTRL H  &hmMT RGUI J  &hmMT RSHIFT K         &hmMT RIGHT_ALT L  &lt 15 SEMICOLON  &mt LSHIFT ENTER
+&mt LS(LGUI) DELETE   &lt 11 Z  &kp X         &hmMT RIGHT_ALT C  &hmMT LEFT_SHIFT V  &lt 9 B          &none    &none  &lt 9 N        &kp M         &hmMT RIGHT_ALT COMMA  &kp DOT            &lt 11 SLASH      &mt LGUI DELETE
+                                              &kp CAPS           &lt 7 TAB           &lt 2 BACKSPACE  &none    &none  &lt 3 SPACE    &lt 7 ENTER   &kp CAPS
             >;
         };
 
@@ -236,11 +236,11 @@
         layer_6 {
             display-name = "6";
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans     &trans     &trans           &trans    &trans    &none
-&kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                          &kp F7     &kp F8     &kp F9           &kp F10   &kp F11   &kp F12
-&kp GRAVE   &kp EXCL      &macro10      &kp HASH      &kp DOLLAR    &kp PRCNT                       &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp TILDE
-&trans      &trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans     &kp MINUS  &kp KP_PLUS      &kp LBRC  &kp RBRC  &kp PIPE
-                                        &trans        &trans        &trans        &trans    &trans  &trans     &trans     &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &bt BT_CLR_ALL  &trans     &trans           &trans    &trans    &none
+&kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                          &kp F7          &kp F8     &kp F9           &kp F10   &kp F11   &kp F12
+&kp GRAVE   &kp EXCL      &macro10      &kp HASH      &kp DOLLAR    &kp PRCNT                       &kp CARET       &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp TILDE
+&trans      &trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans          &kp MINUS  &kp KP_PLUS      &kp LBRC  &kp RBRC  &kp PIPE
+                                        &trans        &trans        &trans        &trans    &trans  &trans          &trans     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -272,11 +272,11 @@
 
         layer_9 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                   &trans  &trans  &trans  &trans  &trans  &trans
-&kp LS(LA(LC(LG(F13))))  &kp LS(LA(LC(LG(F16))))  &kp LS(LA(LC(LG(F7))))  &kp LS(LA(LC(LG(F8))))  &kp LS(LA(LC(LG(F9))))  &kp LS(LA(LC(LG(F8))))                    &trans  &trans  &trans  &trans  &trans  &trans
-&kp LS(LA(LC(LG(F14))))  &kp LS(LA(LC(LG(F17))))  &kp LS(LA(LC(LG(F4))))  &kp LS(LA(LC(LG(F5))))  &kp LS(LA(LC(LG(F6))))  &kp LS(LA(LC(LG(F5))))                    &trans  &trans  &trans  &trans  &trans  &trans
-&kp LS(LA(LC(LG(F15))))  &kp LS(LA(LC(LG(F18))))  &kp LS(LA(LC(LG(F1))))  &kp LS(LA(LC(LG(F2))))  &kp LS(LA(LC(LG(F3))))  &kp LS(LA(LC(LG(F12))))  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                                         &kp LS(LA(LC(LG(N))))  &kp LS(LA(LC(LG(X))))  &kp LG(Q)  &trans    &trans  &trans  &trans  &trans
+&trans                   &trans                   &kp LG(LA(LEFT_BRACKET))  &kp LS(LA(LC(LG(F19))))  &kp LA(LG(RIGHT_BRACKET))  &trans                                     &trans  &trans  &trans  &trans  &trans  &trans
+&kp LS(LA(LC(LG(F13))))  &kp LS(LA(LC(LG(F16))))  &kp LS(LA(LC(LG(F7))))    &kp LS(LA(LC(LG(F8))))   &kp LS(LA(LC(LG(F9))))     &kp LS(LA(LC(LG(F8))))                     &trans  &trans  &trans  &trans  &trans  &trans
+&kp LS(LA(LC(LG(F14))))  &kp LS(LA(LC(LG(F17))))  &kp LS(LA(LC(LG(F4))))    &kp LS(LA(LC(LG(F5))))   &kp LS(LA(LC(LG(F6))))     &kp LS(LA(LC(LG(F5))))                     &trans  &trans  &trans  &trans  &trans  &trans
+&kp LS(LA(LC(LG(F15))))  &kp LS(LA(LC(LG(F18))))  &kp LS(LA(LC(LG(F1))))    &kp LS(LA(LC(LG(F2))))   &kp LS(LA(LC(LG(F3))))     &kp LS(LA(LC(LG(F12))))  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                                                            &kp LS(LA(LC(LG(N))))    &kp LS(LA(LC(LG(X))))      &kp LG(Q)                &trans    &trans  &trans  &trans  &trans
             >;
 
             label = "9";
