@@ -430,11 +430,11 @@
 
         layer_2 {
             bindings = <
-&kp LG(UP)       &kp LS(LG(UP))          &kp LS(LA(LEFT))   &kp LG(A)               &kp LA(LS(RIGHT))     &kp LS(LG(DOWN))                    &none         &none        &none            &none        &none            &kp EQUAL
-&kp LS(LG(TAB))  &kp LS(LG(LEFT))        &kp LG(LEFT)       &mt LGUI UP             &kp LG(RIGHT)         &kp LS(LG(RIGHT))                   &kp GRAVE     &kp N7       &mt LGUI N8      &kp N9       &kp N0           &kp BACKSPACE
-&kp LG(TAB)      &mt LS(LEFT_ALT) ENTER  &mt LEFT_ALT LEFT  &mt LSHIFT DOWN         &mt LGUI RIGHT        &mt LEFT_ALT ENTER                  &kp PLUS      &mt LGUI N4  &mt LSHFT N5     &mt LALT N6  &mt LCTRL MINUS  &kp ENTER
-&kp LG(DOWN)     &mt LSHIFT CAPS         &kp PAGE_UP        &mt LALT K_APPLICATION  &mt LSHIFT PAGE_DOWN  &none               &none    &none  &kp ASTERISK  &kp N1       &mt LEFT_ALT N2  &kp N3       &kp SLASH        &kp DELETE
-                                                            &kp ESCAPE              &kp TAB               &none               &none    &none  &kp SPACE     &kp ENTER    &kp DOT
+&kp LG(UP)       &kp LS(LG(UP))            &kp LS(LA(LEFT))     &kp LG(A)                 &kp LA(LS(RIGHT))       &kp LS(LG(DOWN))                      &none         &none          &none              &none          &none            &kp EQUAL
+&kp LS(LG(TAB))  &kp LS(LG(LEFT))          &kp LG(LEFT)         &hmMT LGUI UP             &kp LG(RIGHT)           &kp LS(LG(RIGHT))                     &kp GRAVE     &kp N7         &hmMT LGUI N8      &kp N9         &kp N0           &kp BACKSPACE
+&kp LG(TAB)      &hmMT LS(LEFT_ALT) ENTER  &hmMT LEFT_ALT LEFT  &hmMT LSHIFT DOWN         &hmMT LGUI RIGHT        &hmMT LEFT_ALT ENTER                  &kp PLUS      &hmMT LGUI N4  &hmMT LSHFT N5     &hmMT LALT N6  &mt LCTRL MINUS  &kp ENTER
+&kp LG(DOWN)     &mt LSHIFT CAPS           &kp PAGE_UP          &hmMT LALT K_APPLICATION  &hmMT LSHIFT PAGE_DOWN  &none                 &none    &none  &kp ASTERISK  &kp N1         &hmMT LEFT_ALT N2  &kp N3         &kp SLASH        &kp DELETE
+                                                                &kp ESCAPE                &kp TAB                 &none                 &none    &none  &kp SPACE     &kp ENTER      &kp DOT
             >;
 
             label = "2";
