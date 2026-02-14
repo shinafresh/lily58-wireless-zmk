@@ -92,40 +92,75 @@
             layers = <0 1>;
         };
 
-        Lan_LH {
+        Lan_LH0 {
             bindings = <&kp LC(SPACE)>;
             key-positions = <52 40>;
+            layers = <0>;
         };
 
-        Lan_RH {
+        Lan_RH0 {
             bindings = <&kp LC(SPACE)>;
             key-positions = <31 32>;
+            layers = <0>;
         };
 
         paste0 {
             bindings = <&kp LG(V)>;
             key-positions = <52 28>;
             require-prior-idle-ms = <100>;
+            layers = <0>;
         };
 
         copy0 {
             bindings = <&kp LG(C)>;
             key-positions = <27 52>;
             require-prior-idle-ms = <100>;
+            layers = <0>;
         };
 
         cut0 {
             bindings = <&kp LG(X)>;
             key-positions = <26 52>;
             require-prior-idle-ms = <100>;
+            layers = <0>;
         };
 
         AltTab0 {
             bindings = <&kp LG(TAB)>;
             key-positions = <25 52>;
             require-prior-idle-ms = <100>;
+            layers = <0>;
         };
 
+        paste1 {
+            bindings = <&kp LC(V)>;
+            key-positions = <52 28>;
+            layers = <1>;
+        };
+
+        copy1 {
+            bindings = <&kp LC(C)>;
+            key-positions = <27 52>;
+            layers = <1>;
+        };
+
+        cut1 {
+            bindings = <&kp LC(X)>;
+            key-positions = <26 52>;
+            layers = <1>;
+        };
+
+        AltTab1 {
+            bindings = <&kp LC(TAB)>;
+            key-positions = <25 52>;
+            layers = <1>;
+        };
+
+        LAN_LH1 {
+            bindings = <&kp RALT>;
+            key-positions = <52 40>;
+            layers = <1>;
+        };
     };
 
     macros {
