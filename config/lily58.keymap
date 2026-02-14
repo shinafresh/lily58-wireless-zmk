@@ -212,11 +212,11 @@
     };
 
     macros {
-        macro10: macro10 {
+        new_macro0: new_macro0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp N6 &kp N0 &kp N0 &kp N6 &kp N2 &kp N2 &kp N6>;
-            label = "MACRO10";
+            bindings = <&kp LS(LG(RIGHT)) &kp LA(SPACE) &kp X>;
+            label = "NEW_MACRO0";
         };
     };
 
