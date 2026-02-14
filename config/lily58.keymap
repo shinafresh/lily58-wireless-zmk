@@ -240,6 +240,41 @@
             bindings = <&kp LS(LG(RIGHT)) &kp LA(SPACE) &kp X>;
             label = "NEW_MACRO0";
         };
+
+        new_macro1: new_macro1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(SPACE) &kp C>;
+            label = "NEW_MACRO1";
+        };
+
+        new_macro2: new_macro2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(SPACE) &kp X>;
+            label = "NEW_MACRO2";
+        };
+
+        new_macro3: new_macro3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(SPACE) &kp N>;
+            label = "NEW_MACRO3";
+        };
+
+        new_macro4: new_macro4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(D) &kp LC(C) &kp LA(TAB)>;
+            label = "NEW_MACRO4";
+        };
+
+        new_macro5: new_macro5 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(D) &kp LC(V) &kp ENTER>;
+            label = "NEW_MACRO5";
+        };
     };
 
     keymap {
