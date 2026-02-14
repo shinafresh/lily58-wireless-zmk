@@ -224,56 +224,6 @@
 
             label = "NEW_MACRO0";
         };
-
-        new_macro1: new_macro1 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LA(SPACE)>, <&macro_wait_time 100>, <&kp X>;
-
-            label = "NEW_MACRO1";
-        };
-
-        new_macro2: new_macro2 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LA(SPACE)>, <&macro_wait_time 100>, <&kp C>;
-
-            label = "NEW_MACRO2";
-        };
-
-        new_macro3: new_macro3 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LA(SPACE)>, <&macro_wait_time 100>, <&kp N>;
-
-            label = "NEW_MACRO3";
-        };
-
-        new_macro4: new_macro4 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&kp LA(D)>,
-                <&macro_wait_time 100>,
-                <&kp LC(C)>,
-                <&macro_wait_time 100>,
-                <&kp LA(TAB)>;
-
-            label = "NEW_MACRO4";
-        };
-
-        new_macro5: new_macro5 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&kp LA(D)>,
-                <&macro_wait_time 100>,
-                <&kp LC(V)>,
-                <&macro_wait_time 100>,
-                <&kp ENTER>;
-
-            label = "NEW_MACRO5";
-        };
     };
 
     behaviors {
