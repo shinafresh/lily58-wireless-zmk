@@ -388,19 +388,6 @@
             label = "NEW_MACRO23";
         };
 
-        new_macro31: new_macro32 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&macro_tap>,
-                <&macro_tap>,
-                <&macro_tap>,
-                <&macro_release>;
-
-            label = "NEW_MACRO32";
-        };
-
         new_macro32: new_macro32 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
