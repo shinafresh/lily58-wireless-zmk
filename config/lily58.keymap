@@ -33,76 +33,6 @@
             require-prior-idle-ms = <100>;
         };
 
-        paste {
-            bindings = <&kp LG(V)>;
-            key-positions = <52 28>;
-            require-prior-idle-ms = <100>;
-        };
-
-        copy {
-            bindings = <&kp LG(C)>;
-            key-positions = <27 52>;
-            require-prior-idle-ms = <100>;
-        };
-
-        cut {
-            bindings = <&kp LG(X)>;
-            key-positions = <26 52>;
-            require-prior-idle-ms = <100>;
-        };
-
-        AltTab {
-            bindings = <&kp LG(TAB)>;
-            key-positions = <25 52>;
-            require-prior-idle-ms = <100>;
-        };
-
-        Lan_LH {
-            bindings = <&kp LC(SPACE)>;
-            key-positions = <52 40>;
-        };
-
-        W_ {
-            bindings = <&kp LS(W)>;
-            key-positions = <14 15>;
-            layers = <0 1>;
-        };
-
-        R_ {
-            bindings = <&kp LS(R)>;
-            key-positions = <15 16>;
-            layers = <0 1>;
-        };
-
-        T_ {
-            bindings = <&kp LS(T)>;
-            key-positions = <27 28>;
-            layers = <0 1>;
-        };
-
-        E_ {
-            bindings = <&kp LS(E)>;
-            key-positions = <27 26>;
-            layers = <0 1>;
-        };
-
-        P_ {
-            bindings = <&kp LS(P)>;
-            key-positions = <34 33>;
-            layers = <0 1>;
-        };
-
-        b_ {
-            bindings = <&kp B>;
-            key-positions = <32 33>;
-            layers = <0 1>;
-        };
-
-        Lan_RH {
-            bindings = <&kp LC(SPACE)>;
-            key-positions = <31 32>;
-        };
-
         MOD_BS {
             bindings = <&kp BACKSPACE>;
             key-positions = <55 19>;
@@ -121,10 +51,84 @@
             require-prior-idle-ms = <100>;
         };
 
+        paste0 {
+            bindings = <&kp LG(V)>;
+            key-positions = <52 28>;
+            require-prior-idle-ms = <100>;
+        };
+
+        copy0 {
+            bindings = <&kp LG(C)>;
+            key-positions = <27 52>;
+            require-prior-idle-ms = <100>;
+        };
+
+        cut0 {
+            bindings = <&kp LG(X)>;
+            key-positions = <26 52>;
+            require-prior-idle-ms = <100>;
+        };
+
+        AltTab0 {
+            bindings = <&kp LG(TAB)>;
+            key-positions = <25 52>;
+            require-prior-idle-ms = <100>;
+        };
+
+
         Q_ {
             bindings = <&kp LS(Q)>;
             key-positions = <26 25>;
         };
+
+        W_ {
+            bindings = <&kp LS(W)>;
+            key-positions = <14 15>;
+            layers = <0 1>;
+        };
+
+        E_ {
+            bindings = <&kp LS(E)>;
+            key-positions = <27 26>;
+            layers = <0 1>;
+        };
+
+        R_ {
+            bindings = <&kp LS(R)>;
+            key-positions = <15 16>;
+            layers = <0 1>;
+        };
+
+        T_ {
+            bindings = <&kp LS(T)>;
+            key-positions = <27 28>;
+            layers = <0 1>;
+        };
+
+        P_ {
+            bindings = <&kp LS(P)>;
+            key-positions = <34 33>;
+            layers = <0 1>;
+        };
+
+        B_ {
+            bindings = <&kp B>;
+            key-positions = <32 33>;
+            layers = <0 1>;
+        };
+
+        Lan_LH {
+            bindings = <&kp LC(SPACE)>;
+            key-positions = <52 40>;
+        };
+
+        Lan_RH {
+            bindings = <&kp LC(SPACE)>;
+            key-positions = <31 32>;
+        };
+
+
+
     };
 
     macros {
