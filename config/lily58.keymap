@@ -279,7 +279,12 @@
         new_macro6: new_macro6 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LALT>, <&macro_release>;
+            bindings =
+                <&macro_press>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_release>;
 
             label = "NEW_MACRO6";
         };
