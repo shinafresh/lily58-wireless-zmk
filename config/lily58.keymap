@@ -92,18 +92,6 @@
             layers = <0 1>;
         };
 
-        Lan_LH0 {
-            bindings = <&kp LC(SPACE)>;
-            key-positions = <52 40>;
-            layers = <0>;
-        };
-
-        Lan_RH0 {
-            bindings = <&kp LC(SPACE)>;
-            key-positions = <31 32>;
-            layers = <0>;
-        };
-
         paste0 {
             bindings = <&kp LG(V)>;
             key-positions = <52 28>;
@@ -156,10 +144,34 @@
             layers = <1>;
         };
 
-        LAN_LH1 {
+        Lan_LH0 {
+            bindings = <&kp LC(SPACE)>;
+            key-positions = <52 40>;
+            layers = <0>;
+        };
+
+        Lan_RH0 {
+            bindings = <&kp LC(SPACE)>;
+            key-positions = <31 32>;
+            layers = <0>;
+        };
+
+        Lan_LH1 {
             bindings = <&kp RALT>;
             key-positions = <52 40>;
             layers = <1>;
+        };
+
+        Lan_RH1 {
+            bindings = <&kp RALT>;
+            key-positions = <31 32>;
+            layers = <1>;
+        };
+
+        Hanja_LH0 {
+            bindings = <&kp RCTL>;
+            key-positions = <52 39>;
+            layers = <0>;
         };
     };
 
