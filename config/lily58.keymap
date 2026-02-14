@@ -16,18 +16,18 @@
     combos {
         compatible = "zmk,combos";
 
-        MOD_ES {
+        MOD_esc {
             bindings = <&kp DELETE>;
             key-positions = <14 52>;
         };
 
-        MOD_EN {
+        MOD_ent {
             bindings = <&kp ENTER>;
             key-positions = <15 52>;
             require-prior-idle-ms = <100>;
         };
 
-        MOD_SP {
+        MOD_space {
             bindings = <&kp SPACE>;
             key-positions = <16 52>;
             require-prior-idle-ms = <100>;
@@ -124,6 +124,26 @@
         Q_ {
             bindings = <&kp LS(Q)>;
             key-positions = <26 25>;
+        };
+
+        click1 {
+            bindings = <&mkp MB1>;
+            key-positions = <29 52>;
+        };
+
+        question {
+            bindings = <&kp QUESTION>;
+            key-positions = <38 37>;
+        };
+
+        question_r {
+            bindings = <&kp QUESTION>;
+            key-positions = <48 47>;
+        };
+
+        HANJA_LH0 {
+            bindings = <&kp RCTRL>;
+            key-positions = <52 39>;
         };
     };
 
@@ -355,5 +375,12 @@
         };
     };
 
-    conditional_layers { compatible = "zmk,conditional-layers"; };
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        tri {
+            if-layers = <2 3>;
+            then-layer = <6>;
+        };
+    };
 };
