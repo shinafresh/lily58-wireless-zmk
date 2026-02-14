@@ -179,6 +179,36 @@
             key-positions = <45 46>;
             layers = <0 1>;
         };
+
+        question_LH {
+            bindings = <&kp QUESTION>;
+            key-positions = <37 38>;
+            layers = <0 1>;
+        };
+
+        question_RH {
+            bindings = <&kp QUESTION>;
+            key-positions = <47 48>;
+            layers = <0 1>;
+        };
+
+        click1 {
+            bindings = <&mkp MB1>;
+            key-positions = <29 52>;
+            layers = <0 2>;
+        };
+
+        toWIN {
+            bindings = <&to 1>;
+            key-positions = <52 51 50>;
+            layers = <0>;
+        };
+
+        toMAC {
+            bindings = <&mo 0>;
+            key-positions = <55 56 57>;
+            layers = <1>;
+        };
     };
 
     macros {
