@@ -51,15 +51,17 @@
             require-prior-idle-ms = <100>;
         };
 
-        AltTab {
+        AltTab0 {
             bindings = <&kp LG(TAB)>;
             key-positions = <25 52>;
             require-prior-idle-ms = <100>;
+            layers = <0>;
         };
 
-        Lan_LH {
+        LAN_LH0 {
             bindings = <&kp LC(SPACE)>;
             key-positions = <52 40>;
+            layers = <0>;
         };
 
         W_ {
@@ -98,9 +100,10 @@
             layers = <0 1>;
         };
 
-        Lan_RH {
+        LAN_RH0 {
             bindings = <&kp LC(SPACE)>;
             key-positions = <31 32>;
+            layers = <0>;
         };
 
         MOD_BS {
@@ -124,26 +127,55 @@
         Q_ {
             bindings = <&kp LS(Q)>;
             key-positions = <26 25>;
+            layers = <0 1>;
         };
 
         click1 {
             bindings = <&mkp MB1>;
             key-positions = <29 52>;
+            layers = <1 0>;
         };
 
-        question {
+        question_LH {
             bindings = <&kp QUESTION>;
             key-positions = <38 37>;
+            layers = <0 1>;
         };
 
-        question_r {
+        question_RH {
             bindings = <&kp QUESTION>;
             key-positions = <48 47>;
+            layers = <1 0>;
         };
 
         HANJA_LH0 {
             bindings = <&kp RCTRL>;
             key-positions = <52 39>;
+            layers = <0>;
+        };
+
+        HANJA_RH0 {
+            bindings = <&kp RCTRL>;
+            key-positions = <45 46>;
+            layers = <0>;
+        };
+
+        toPC {
+            bindings = <&to 1>;
+            key-positions = <52 51 50>;
+            layers = <0>;
+        };
+
+        toMAC {
+            bindings = <&mo 0>;
+            key-positions = <55 56 57>;
+            layers = <1>;
+        };
+
+        AltTab1 {
+            bindings = <&kp LA(TAB)>;
+            key-positions = <25 52>;
+            layers = <1>;
         };
     };
 
