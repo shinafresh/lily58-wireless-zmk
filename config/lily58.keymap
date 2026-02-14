@@ -168,10 +168,16 @@
             layers = <1>;
         };
 
-        Hanja_LH0 {
-            bindings = <&kp RCTL>;
+        Hanja_LH {
+            bindings = <&kp RCTRL>;
             key-positions = <52 39>;
-            layers = <0>;
+            layers = <0 1>;
+        };
+
+        Hanja_RH {
+            bindings = <&kp RCTRL>;
+            key-positions = <45 46>;
+            layers = <0 1>;
         };
     };
 
