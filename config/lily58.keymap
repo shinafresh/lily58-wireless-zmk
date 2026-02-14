@@ -51,31 +51,6 @@
             require-prior-idle-ms = <100>;
         };
 
-        paste0 {
-            bindings = <&kp LG(V)>;
-            key-positions = <52 28>;
-            require-prior-idle-ms = <100>;
-        };
-
-        copy0 {
-            bindings = <&kp LG(C)>;
-            key-positions = <27 52>;
-            require-prior-idle-ms = <100>;
-        };
-
-        cut0 {
-            bindings = <&kp LG(X)>;
-            key-positions = <26 52>;
-            require-prior-idle-ms = <100>;
-        };
-
-        AltTab0 {
-            bindings = <&kp LG(TAB)>;
-            key-positions = <25 52>;
-            require-prior-idle-ms = <100>;
-        };
-
-
         Q_ {
             bindings = <&kp LS(Q)>;
             key-positions = <26 25>;
@@ -127,7 +102,29 @@
             key-positions = <31 32>;
         };
 
+        paste0 {
+            bindings = <&kp LG(V)>;
+            key-positions = <52 28>;
+            require-prior-idle-ms = <100>;
+        };
 
+        copy0 {
+            bindings = <&kp LG(C)>;
+            key-positions = <27 52>;
+            require-prior-idle-ms = <100>;
+        };
+
+        cut0 {
+            bindings = <&kp LG(X)>;
+            key-positions = <26 52>;
+            require-prior-idle-ms = <100>;
+        };
+
+        AltTab0 {
+            bindings = <&kp LG(TAB)>;
+            key-positions = <25 52>;
+            require-prior-idle-ms = <100>;
+        };
 
     };
 
