@@ -16,55 +16,50 @@
     combos {
         compatible = "zmk,combos";
 
-        MOD_esc {
+        MOD_ES {
             bindings = <&kp DELETE>;
             key-positions = <14 52>;
         };
 
-        MOD_ent {
+        MOD_EN {
             bindings = <&kp ENTER>;
             key-positions = <15 52>;
             require-prior-idle-ms = <100>;
         };
 
-        MOD_space {
+        MOD_SP {
             bindings = <&kp SPACE>;
             key-positions = <16 52>;
             require-prior-idle-ms = <100>;
         };
 
-        paste0 {
+        paste {
             bindings = <&kp LG(V)>;
             key-positions = <52 28>;
             require-prior-idle-ms = <100>;
-            layers = <0>;
         };
 
-        copy0 {
+        copy {
             bindings = <&kp LG(C)>;
             key-positions = <27 52>;
             require-prior-idle-ms = <100>;
-            layers = <0>;
         };
 
-        cut0 {
+        cut {
             bindings = <&kp LG(X)>;
             key-positions = <26 52>;
             require-prior-idle-ms = <100>;
-            layers = <0>;
         };
 
-        AltTab0 {
+        AltTab {
             bindings = <&kp LG(TAB)>;
             key-positions = <25 52>;
             require-prior-idle-ms = <100>;
-            layers = <0>;
         };
 
-        LAN_LH0 {
+        Lan_LH {
             bindings = <&kp LC(SPACE)>;
             key-positions = <52 40>;
-            layers = <0>;
         };
 
         W_ {
@@ -103,10 +98,9 @@
             layers = <0 1>;
         };
 
-        LAN_RH0 {
+        Lan_RH {
             bindings = <&kp LC(SPACE)>;
             key-positions = <31 32>;
-            layers = <0>;
         };
 
         MOD_BS {
@@ -130,55 +124,6 @@
         Q_ {
             bindings = <&kp LS(Q)>;
             key-positions = <26 25>;
-            layers = <0 1>;
-        };
-
-        click1 {
-            bindings = <&mkp MB1>;
-            key-positions = <29 52>;
-            layers = <1 0>;
-        };
-
-        question_LH {
-            bindings = <&kp QUESTION>;
-            key-positions = <38 37>;
-            layers = <0 1>;
-        };
-
-        question_RH {
-            bindings = <&kp QUESTION>;
-            key-positions = <48 47>;
-            layers = <1 0>;
-        };
-
-        HANJA_LH0 {
-            bindings = <&kp RCTRL>;
-            key-positions = <52 39>;
-            layers = <0>;
-        };
-
-        HANJA_RH0 {
-            bindings = <&kp RCTRL>;
-            key-positions = <45 46>;
-            layers = <0>;
-        };
-
-        toPC {
-            bindings = <&to 1>;
-            key-positions = <52 51 50>;
-            layers = <0>;
-        };
-
-        toMAC {
-            bindings = <&mo 0>;
-            key-positions = <55 56 57>;
-            layers = <1>;
-        };
-
-        AltTab1 {
-            bindings = <&kp LA(TAB)>;
-            key-positions = <25 52>;
-            layers = <1>;
         };
     };
 
@@ -219,11 +164,11 @@
         layer_0 {
             display-name = "0";
             bindings = <
-&kp GRAVE             &kp N1    &kp N2        &kp N3          &kp N4              &kp N5                           &kp N6         &kp N7        &kp N8            &kp N9        &kp N0            &kp MINUS
-&mt LEFT_CONTROL TAB  &lt 8 Q   &kp W         &hmMT LGUI E    &kp R               &kp T                            &kp Y          &kp U         &hmMT LGUI I      &kp O         &lt 8 P           &kp BACKSPACE
-&mt LSHIFT ESCAPE     &lt 12 A  &hmMT LALT S  &hmMT LSHIFT D  &hmMT LGUI F        &hmMT LCTRL G                    &hmMT LCTRL H  &hmMT LGUI J  &hmMT RSHIFT K    &hmMT LALT L  &lt 15 SEMICOLON  &mt LSHIFT ENTER
-&mt LS(LGUI) DELETE   &lt 11 Z  &kp X         &hmMT LALT C    &hmMT LEFT_SHIFT V  &lt 9 B          &none    &none  &lt 9 N        &kp M         &hmMT LALT COMMA  &kp DOT       &lt 11 SLASH      &mt LS(LGUI) DELETE
-                                              &kp CAPS        &lt 7 TAB           &lt 2 BACKSPACE  &none    &none  &lt 3 SPACE    &lt 7 ENTER   &kp CAPS
+&kp GRAVE             &kp N1      &kp N2        &kp N3           &kp N4              &kp N5                           &kp N6         &kp N7        &kp N8                 &kp N9             &kp N0              &kp GRAVE
+&mt LEFT_CONTROL TAB  &hmLT 8 Q   &kp W         &hmMT LGUI E     &kp R               &kp T                            &kp Y          &kp U         &hmMT LGUI I           &kp O              &hmLT 8 P           &kp BACKSPACE
+&mt LSHIFT ESCAPE     &hmLT 12 A  &hmMT RALT S  &hmMT LSHIFT D   &hmMT LGUI F        &hmMT LCTRL G                    &hmMT LCTRL H  &hmMT RGUI J  &hmMT RSHIFT K         &hmMT RIGHT_ALT L  &hmLT 15 SEMICOLON  &mt LSHIFT ENTER
+&mt LS(LGUI) DELETE   &hmLT 11 Z  &kp X         &mt RIGHT_ALT C  &hmMT LEFT_SHIFT V  &hmLT 9 B        &none    &none  &hmLT 9 N      &kp M         &hmMT RIGHT_ALT COMMA  &kp DOT            &hmLT 11 SLASH      &mt LGUI DELETE
+                                                &kp CAPS         &lt 7 TAB           &lt 2 BACKSPACE  &none    &none  &lt 3 SPACE    &lt 7 ENTER   &kp CAPS
             >;
         };
 
@@ -242,7 +187,7 @@
         layer_2 {
             bindings = <
 &kp LG(UP)       &kp LS(LG(UP))          &kp LS(LA(LEFT))   &kp LG(A)                    &kp LA(LS(RIGHT))     &kp LS(LG(DOWN))                    &none         &none        &none            &none        &none            &kp EQUAL
-&kp LS(LG(TAB))  &kp LS(LG(LEFT))        &kp LG(LEFT)       &kp LG(UP)                   &kp LG(RIGHT)         &kp LS(LG(RIGHT))                   &kp GRAVE     &kp N7       &mt LGUI N8      &kp N9       &kp N0           &kp BACKSPACE
+&kp LS(LG(TAB))  &kp LS(LG(LEFT))        &kp LG(LEFT)       &kp LG(UP)                   &kp LG(RIGHT)         &kp LS(LG(RIGHT))                   &kp GRAVE     &kp N7       &mt LGUI N8      &kp N9       &kp N0           &kp BACKSLASH
 &kp LG(TAB)      &mt LS(LEFT_ALT) ENTER  &mt LEFT_ALT LEFT  &mt LSHIFT DOWN              &mt LGUI RIGHT        &mt LEFT_ALT ENTER                  &kp PLUS      &mt LGUI N4  &mt LSHFT N5     &mt LALT N6  &mt LCTRL MINUS  &kp ENTER
 &kp LG(DOWN)     &mt LSHIFT CAPS         &kp PAGE_UP        &mt RIGHT_ALT K_APPLICATION  &mt RSHIFT PAGE_DOWN  &none               &none    &none  &kp ASTERISK  &kp N1       &mt LEFT_ALT N2  &kp N3       &kp SLASH        &kp DELETE
                                                             &kp ESCAPE                   &kp TAB               &none               &none    &none  &kp SPACE     &kp ENTER    &kp DOT
@@ -291,11 +236,11 @@
         layer_6 {
             display-name = "6";
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &bt BT_CLR_ALL  &trans     &trans           &trans    &trans    &none
-&kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                          &kp F7          &kp F8     &kp F9           &kp F10   &kp F11   &kp F12
-&kp GRAVE   &kp EXCL      &macro10      &kp HASH      &kp DOLLAR    &kp PRCNT                       &kp CARET       &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp TILDE
-&trans      &trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans          &kp MINUS  &kp KP_PLUS      &kp LBRC  &kp RBRC  &kp PIPE
-                                        &trans        &trans        &trans        &trans    &trans  &trans          &trans     &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans     &trans     &trans           &trans    &trans    &none
+&kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                          &kp F7     &kp F8     &kp F9           &kp F10   &kp F11   &kp F12
+&kp GRAVE   &kp EXCL      &macro10      &kp HASH      &kp DOLLAR    &kp PRCNT                       &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp TILDE
+&trans      &trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans     &kp MINUS  &kp KP_PLUS      &kp LBRC  &kp RBRC  &kp PIPE
+                                        &trans        &trans        &trans        &trans    &trans  &trans     &trans     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -327,11 +272,11 @@
 
         layer_9 {
             bindings = <
-&trans                   &trans                   &kp LG(LA(LEFT_BRACKET))  &kp LS(LA(LC(LG(F19))))  &kp LA(LG(RIGHT_BRACKET))  &trans                                     &trans  &trans  &trans  &trans  &trans  &trans
-&kp LS(LA(LC(LG(F13))))  &kp LS(LA(LC(LG(F16))))  &kp LS(LA(LC(LG(F7))))    &kp LS(LA(LC(LG(F8))))   &kp LS(LA(LC(LG(F9))))     &kp LS(LA(LC(LG(F8))))                     &trans  &trans  &trans  &trans  &trans  &trans
-&kp LS(LA(LC(LG(F14))))  &kp LS(LA(LC(LG(F17))))  &kp LS(LA(LC(LG(F4))))    &kp LS(LA(LC(LG(F5))))   &kp LS(LA(LC(LG(F6))))     &kp LS(LA(LC(LG(F5))))                     &trans  &trans  &trans  &trans  &trans  &trans
-&kp LS(LA(LC(LG(F15))))  &kp LS(LA(LC(LG(F18))))  &kp LS(LA(LC(LG(F1))))    &kp LS(LA(LC(LG(F2))))   &kp LS(LA(LC(LG(F3))))     &kp LS(LA(LC(LG(F12))))  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                                                                            &kp LS(LA(LC(LG(N))))    &kp LS(LA(LC(LG(X))))      &kp LG(Q)                &trans    &trans  &trans  &trans  &trans
+&trans                   &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&kp LS(LA(LC(LG(F13))))  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans                   &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans                   &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                         &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
             >;
 
             label = "9";
@@ -410,12 +355,5 @@
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        tri {
-            if-layers = <2 3>;
-            then-layer = <6>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 };
