@@ -59,37 +59,37 @@
         W_ {
             bindings = <&kp LS(W)>;
             key-positions = <14 15>;
-            layers = <0 1>;
+            layers = <0>;
         };
 
         E_ {
             bindings = <&kp LS(E)>;
             key-positions = <27 26>;
-            layers = <0 1>;
+            layers = <0>;
         };
 
         R_ {
             bindings = <&kp LS(R)>;
             key-positions = <15 16>;
-            layers = <0 1>;
+            layers = <0>;
         };
 
         T_ {
             bindings = <&kp LS(T)>;
             key-positions = <27 28>;
-            layers = <0 1>;
+            layers = <0>;
         };
 
         P_ {
             bindings = <&kp LS(P)>;
             key-positions = <34 33>;
-            layers = <0 1>;
+            layers = <0>;
         };
 
         B_ {
             bindings = <&kp B>;
             key-positions = <32 33>;
-            layers = <0 1>;
+            layers = <0>;
         };
 
         paste0 {
@@ -123,25 +123,21 @@
         paste1 {
             bindings = <&kp LC(V)>;
             key-positions = <52 28>;
-            layers = <1>;
         };
 
         copy1 {
             bindings = <&kp LC(C)>;
             key-positions = <27 52>;
-            layers = <1>;
         };
 
         cut1 {
             bindings = <&kp LC(X)>;
             key-positions = <26 52>;
-            layers = <1>;
         };
 
         AltTab1 {
             bindings = <&kp LC(TAB)>;
             key-positions = <25 52>;
-            layers = <1>;
         };
 
         Lan_LH0 {
@@ -159,37 +155,35 @@
         Lan_LH1 {
             bindings = <&kp RALT>;
             key-positions = <52 40>;
-            layers = <1>;
         };
 
         Lan_RH1 {
             bindings = <&kp RALT>;
             key-positions = <31 32>;
-            layers = <1>;
         };
 
         Hanja_LH {
             bindings = <&kp RCTRL>;
             key-positions = <52 39>;
-            layers = <0 1>;
+            layers = <0>;
         };
 
         Hanja_RH {
             bindings = <&kp RCTRL>;
             key-positions = <45 46>;
-            layers = <0 1>;
+            layers = <0>;
         };
 
         question_LH {
             bindings = <&kp QUESTION>;
             key-positions = <37 38>;
-            layers = <0 1>;
+            layers = <0>;
         };
 
         question_RH {
             bindings = <&kp QUESTION>;
             key-positions = <47 48>;
-            layers = <0 1>;
+            layers = <0>;
         };
 
         click1 {
@@ -199,7 +193,7 @@
         };
 
         toWIN {
-            bindings = <&to 1>;
+            bindings = <&to 0>;
             key-positions = <52 51 50>;
             layers = <0>;
         };
@@ -207,7 +201,6 @@
         toMAC {
             bindings = <&mo 0>;
             key-positions = <55 56 57>;
-            layers = <1>;
         };
     };
 
@@ -408,24 +401,23 @@
         layer_0 {
             display-name = "0";
             bindings = <
-&kp GRAVE             &kp N1      &kp N2        &kp N3          &kp N4              &kp N5                           &kp N6         &kp N7        &kp N8            &kp N9        &kp N0              &kp GRAVE
-&mt LEFT_CONTROL TAB  &hmLT 8 Q   &kp W         &hmMT LGUI E    &kp R               &kp T                            &kp Y          &kp U         &hmMT LGUI I      &kp O         &hmLT 8 P           &kp BACKSPACE
-&mt LSHIFT ESCAPE     &hmLT 12 A  &hmMT LALT S  &hmMT LSHIFT D  &hmMT LGUI F        &hmMT LCTRL G                    &hmMT LCTRL H  &hmMT LALT J  &hmMT LSHIFT K    &hmMT LALT L  &hmLT 15 SEMICOLON  &mt LSHIFT ENTER
-&mt LS(LGUI) DELETE   &hmLT 11 Z  &kp X         &hmMT LALT C    &hmMT LEFT_SHIFT V  &hmLT 9 B        &none    &none  &hmLT 9 N      &kp M         &hmMT LALT COMMA  &kp DOT       &hmLT 11 SLASH      &mt LS(LGUI) DELETE
-                                                &kp CAPS        &lt 7 TAB           &lt 2 BACKSPACE  &none    &none  &lt 3 SPACE    &lt 7 ENTER   &kp CAPS
+&kp GRAVE             &kp N1    &kp N2        &kp N3          &kp N4              &kp N5                           &kp N6         &kp N7        &kp N8            &kp N9        &kp N0            &kp GRAVE
+&mt LEFT_CONTROL TAB  &lt 8 Q   &kp W         &hmMT LGUI E    &kp R               &kp T                            &kp Y          &kp U         &hmMT LGUI I      &kp O         &lt 8 P           &kp BACKSPACE
+&mt LSHIFT ESCAPE     &lt 12 A  &hmMT LALT S  &hmMT LSHIFT D  &hmMT LGUI F        &hmMT LCTRL G                    &hmMT LCTRL H  &hmMT LGUI J  &hmMT LSHIFT K    &hmMT LALT L  &lt 15 SEMICOLON  &mt LSHIFT ENTER
+&mt LS(LGUI) DELETE   &lt 11 Z  &kp X         &hmMT LALT C    &hmMT LEFT_SHIFT V  &lt 9 B          &none    &none  &lt 9 N        &kp M         &hmMT LALT COMMA  &kp DOT       &lt 11 SLASH      &mt LS(LGUI) DELETE
+                                              &kp CAPS        &lt 7 TAB           &lt 2 BACKSPACE  &none    &none  &lt 3 SPACE    &lt 7 ENTER   &kp CAPS
             >;
         };
 
         layer_1 {
+            display-name = "1";
             bindings = <
-&none  &none  &none  &none         &none          &none                         &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none         &none          &none                         &none  &none  &none  &none  &none  &none
-&none  &none  &none  &mt LSHIFT D  &hmMT LCTRL F  &hmMT LGUI G                  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none         &none          &none         &none    &none  &none  &none  &none  &none  &none  &none
-                     &none         &none          &none         &none    &none  &none  &none  &none
+&kp GRAVE             &kp N1    &kp N2        &kp N3          &kp N4              &kp N5                           &kp N6        &kp N7         &kp N8            &kp N9        &kp N0            &kp GRAVE
+&mt LEFT_CONTROL TAB  &lt 8 Q   &kp W         &hmMT LCTRL E   &kp R               &kp T                            &kp Y         &kp U          &hmMT LCTRL I     &kp O         &lt 8 P           &kp BACKSPACE
+&mt LSHIFT ESCAPE     &lt 12 A  &hmMT LALT S  &hmMT LSHIFT D  &hmMT LCTRL F       &hmMT LGUI G                     &hmMT LGUI H  &hmMT LCTRL J  &hmMT LSHIFT K    &hmMT LALT L  &lt 13 SEMICOLON  &mt LSHIFT ENTER
+&mt LS(LGUI) DELETE   &lt 10 Z  &kp X         &hmMT LALT C    &hmMT LEFT_SHIFT V  &lt 9 B          &none    &none  &lt 9 N       &kp M          &hmMT LALT COMMA  &kp DOT       &lt 11 SLASH      &mt LS(LGUI) DELETE
+                                              &kp CAPS        &lt 7 TAB           &lt 4 BACKSPACE  &none    &none  &lt 5 SPACE   &lt 7 ENTER    &kp CAPS
             >;
-
-            label = "1";
         };
 
         layer_2 {
@@ -527,15 +519,14 @@
         };
 
         layer_10 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
-            >;
-
             label = "10";
+            bindings = <
+&kp MINUS     &kp N0         &kp N9      &kp N8                   &kp N7                  &kp N6                                  &kp N5                  &kp N4                  &kp N3                   &kp N2  &kp N1  &kp GRAVE
+&none         &kp P          &kp O       &kp I                    &kp U                   &kp Y                                   &kp T                   &kp R                   &kp E                    &kp W   &kp Q   &none
+&kp LG(RBKT)  &kp SEMICOLON  &kp L       &kp K                    &kp J                   &kp H                                   &kp G                   &kp F                   &kp D                    &kp S   &kp A   &kp LG(RBKT)
+&kp LG(LBKT)  &kp SLASH      &kp PERIOD  &kp COMMA                &kp M                   &kp N                   &none    &none  &kp B                   &kp V                   &kp C                    &kp X   &kp Z   &kp LG(LBKT)
+                                         &kp LS(LA(LC(LG(F19))))  &kp LS(LA(LC(LG(F4))))  &kp LS(LA(LC(LG(F6))))  &none    &none  &kp LS(LA(LC(LG(F4))))  &kp LS(LA(LC(LG(F6))))  &kp LS(LA(LC(LG(F22))))
+            >;
         };
 
         layer_11 {
