@@ -33,22 +33,25 @@
             require-prior-idle-ms = <100>;
         };
 
-        paste {
+        paste0 {
             bindings = <&kp LG(V)>;
             key-positions = <52 28>;
             require-prior-idle-ms = <100>;
+            layers = <0>;
         };
 
-        copy {
+        copy0 {
             bindings = <&kp LG(C)>;
             key-positions = <27 52>;
             require-prior-idle-ms = <100>;
+            layers = <0>;
         };
 
-        cut {
+        cut0 {
             bindings = <&kp LG(X)>;
             key-positions = <26 52>;
             require-prior-idle-ms = <100>;
+            layers = <0>;
         };
 
         AltTab0 {
