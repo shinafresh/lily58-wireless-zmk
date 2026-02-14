@@ -439,5 +439,12 @@
         };
     };
 
-    conditional_layers { compatible = "zmk,conditional-layers"; };
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        tri {
+            if-layers = <0 1>;
+            then-layer = <6>;
+        };
+    };
 };
