@@ -357,10 +357,10 @@
         layer_9 {
             bindings = <
 &trans                   &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&kp LS(LA(LC(LG(F13))))  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans                   &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans                   &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                                         &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+&kp LS(LA(LC(LG(F13))))  &kp LS(LA(LC(LG(F16))))  &kp LS(LA(LC(LG(F7))))  &kp LS(LA(LC(LG(F8))))  &kp LS(LA(LC(LG(F9))))  &kp LS(LA(LC(LG(F8))))                    &trans  &trans  &trans  &trans  &trans  &trans
+&kp LS(LA(LC(LG(F14))))  &kp LS(LA(LC(LG(F17))))  &kp LS(LA(LC(LG(F4))))  &kp LS(LA(LC(LG(F5))))  &kp LS(LA(LC(LG(F6))))  &kp LS(LA(LC(LG(F5))))                    &trans  &trans  &trans  &trans  &trans  &trans
+&kp LS(LA(LC(LG(F15))))  &kp LS(LA(LC(LG(F18))))  &kp LS(LA(LC(LG(F1))))  &kp LS(LA(LC(LG(F2))))  &kp LS(LA(LC(LG(F3))))  &kp LS(LA(LC(LG(F12))))  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                         &kp LS(LA(LC(LG(N))))  &kp LS(LA(LC(LG(X))))  &kp LS(LA(LC(LG(Q))))  &trans    &trans  &trans  &trans  &trans
             >;
 
             label = "9";
