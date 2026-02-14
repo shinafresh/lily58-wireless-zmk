@@ -275,6 +275,14 @@
             bindings = <&kp LA(D) &kp LC(V) &kp ENTER>;
             label = "NEW_MACRO5";
         };
+
+        new_macro6: new_macro6 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&kp LALT>, <&macro_release>;
+
+            label = "NEW_MACRO6";
+        };
     };
 
     keymap {
@@ -283,11 +291,11 @@
         layer_0 {
             display-name = "0";
             bindings = <
-&kp GRAVE             &kp N1      &kp N2        &kp N3           &kp N4              &kp N5                           &kp N6         &kp N7        &kp N8                 &kp N9             &kp N0              &kp GRAVE
-&mt LEFT_CONTROL TAB  &hmLT 8 Q   &kp W         &hmMT LGUI E     &kp R               &kp T                            &kp Y          &kp U         &hmMT LGUI I           &kp O              &hmLT 8 P           &kp BACKSPACE
-&mt LSHIFT ESCAPE     &hmLT 12 A  &hmMT RALT S  &hmMT LSHIFT D   &hmMT LGUI F        &hmMT LCTRL G                    &hmMT LCTRL H  &hmMT RGUI J  &hmMT RSHIFT K         &hmMT RIGHT_ALT L  &hmLT 15 SEMICOLON  &mt LSHIFT ENTER
-&mt LS(LGUI) DELETE   &hmLT 11 Z  &kp X         &mt RIGHT_ALT C  &hmMT LEFT_SHIFT V  &hmLT 9 B        &none    &none  &hmLT 9 N      &kp M         &hmMT RIGHT_ALT COMMA  &kp DOT            &hmLT 11 SLASH      &mt LGUI DELETE
-                                                &kp CAPS         &lt 7 TAB           &lt 2 BACKSPACE  &none    &none  &lt 3 SPACE    &lt 7 ENTER   &kp CAPS
+&kp GRAVE             &kp N1      &kp N2        &kp N3          &kp N4              &kp N5                           &kp N6         &kp N7        &kp N8            &kp N9        &kp N0              &kp GRAVE
+&mt LEFT_CONTROL TAB  &hmLT 8 Q   &kp W         &hmMT LGUI E    &kp R               &kp T                            &kp Y          &kp U         &hmMT LGUI I      &kp O         &hmLT 8 P           &kp BACKSPACE
+&mt LSHIFT ESCAPE     &hmLT 12 A  &hmMT LALT S  &hmMT LSHIFT D  &hmMT LGUI F        &hmMT LCTRL G                    &hmMT LCTRL H  &hmMT LALT J  &hmMT LSHIFT K    &hmMT LALT L  &hmLT 15 SEMICOLON  &mt LSHIFT ENTER
+&mt LS(LGUI) DELETE   &hmLT 11 Z  &kp X         &hmMT LALT C    &hmMT LEFT_SHIFT V  &hmLT 9 B        &none    &none  &hmLT 9 N      &kp M         &hmMT LALT COMMA  &kp DOT       &hmLT 11 SLASH      &mt LS(LGUI) DELETE
+                                                &kp CAPS        &lt 7 TAB           &lt 2 BACKSPACE  &none    &none  &lt 3 SPACE    &lt 7 ENTER   &kp CAPS
             >;
         };
 
@@ -306,7 +314,7 @@
         layer_2 {
             bindings = <
 &kp LG(UP)       &kp LS(LG(UP))          &kp LS(LA(LEFT))   &kp LG(A)                    &kp LA(LS(RIGHT))     &kp LS(LG(DOWN))                    &none         &none        &none            &none        &none            &kp EQUAL
-&kp LS(LG(TAB))  &kp LS(LG(LEFT))        &kp LG(LEFT)       &kp LG(UP)                   &kp LG(RIGHT)         &kp LS(LG(RIGHT))                   &kp GRAVE     &kp N7       &mt LGUI N8      &kp N9       &kp N0           &kp LC(BACKSPACE)
+&kp LS(LG(TAB))  &kp LS(LG(LEFT))        &kp LG(LEFT)       &kp LG(UP)                   &kp LG(RIGHT)         &kp LS(LG(RIGHT))                   &kp GRAVE     &kp N7       &mt LGUI N8      &kp N9       &kp N0           &kp BACKSPACE
 &kp LG(TAB)      &mt LS(LEFT_ALT) ENTER  &mt LEFT_ALT LEFT  &mt LSHIFT DOWN              &mt LGUI RIGHT        &mt LEFT_ALT ENTER                  &kp PLUS      &mt LGUI N4  &mt LSHFT N5     &mt LALT N6  &mt LCTRL MINUS  &kp ENTER
 &kp LG(DOWN)     &mt LSHIFT CAPS         &kp PAGE_UP        &mt RIGHT_ALT K_APPLICATION  &mt RSHIFT PAGE_DOWN  &none               &none    &none  &kp ASTERISK  &kp N1       &mt LEFT_ALT N2  &kp N3       &kp SLASH        &kp DELETE
                                                             &kp ESCAPE                   &kp TAB               &none               &none    &none  &kp SPACE     &kp ENTER    &kp DOT
