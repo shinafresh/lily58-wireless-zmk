@@ -418,11 +418,11 @@
 
         layer_1 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &kp D   &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+&none  &none  &none  &none         &none          &none                         &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none         &none          &none                         &none  &none  &none  &none  &none  &none
+&none  &none  &none  &mt LSHIFT D  &hmMT LCTRL F  &hmMT LGUI G                  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none         &none          &none         &none    &none  &none  &none  &none  &none  &none  &none
+                     &none         &none          &none         &none    &none  &none  &none  &none
             >;
 
             label = "1";
@@ -599,12 +599,5 @@
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        tri {
-            if-layers = <0 1>;
-            then-layer = <6>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 };
