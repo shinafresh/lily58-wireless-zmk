@@ -452,11 +452,11 @@
 
         layer_4 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &kp F   &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+&kp  &kp  &kp  &kp  &kp    &kp              &kp  &kp  &kp  &kp  &kp  &kp
+&kp  &kp  &kp  &kp  &kp    &kp              &kp  &kp  &kp  &kp  &kp  &kp
+&kp  &kp  &kp  &kp  &kp F  &kp              &kp  &kp  &kp  &kp  &kp  &kp
+&kp  &kp  &kp  &kp  &kp    &kp  &kp    &kp  &kp  &kp  &kp  &kp  &kp  &kp
+               &kp  &kp    &kp  &kp    &kp  &kp  &kp  &kp
             >;
 
             label = "4";
@@ -465,14 +465,12 @@
         layer_5 {
             display-name = "5";
             bindings = <
-&trans     &trans  &trans  &trans   &trans   &trans                     &trans       &trans     &trans     &trans    &trans     &trans
-&kp GRAVE  &kp N1  &kp N2  &kp N3   &kp N4   &kp N5                     &kp N6       &kp N7     &kp N8     &kp N9    &kp N0     &trans
-&kp F1     &kp F2  &kp F3  &kp F4   &kp F5   &kp F6                     &trans       &kp LEFT   &kp DOWN   &kp UP    &kp RIGHT  &trans
-&kp F7     &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &trans    &trans  &kp KP_PLUS  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT   &kp BSLH
-                           &trans   &trans   &trans   &trans    &trans  &trans       &trans     &trans
+&kp        &kp     &kp     &kp      &kp      &kp                  &kp          &kp        &kp        &kp       &kp        &kp
+&kp GRAVE  &kp N1  &kp N2  &kp N3   &kp N4   &kp N5               &kp N6       &kp N7     &kp N8     &kp N9    &kp N0     &kp
+&kp F1     &kp F2  &kp F3  &kp F4   &kp F5   &kp F6               &kp          &kp LEFT   &kp DOWN   &kp UP    &kp RIGHT  &kp
+&kp F7     &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &kp    &kp  &kp KP_PLUS  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT   &kp BSLH
+                           &kp      &kp      &kp      &kp    &kp  &kp          &kp        &kp
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         layer_6 {
@@ -484,8 +482,6 @@
 &bootloader  &none         &none         &none         &none         &none         &none    &none  &none  &none  &none  &none  &none  &bootloader
                                          &none         &none         &none         &none    &none  &none  &none  &none
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         layer_7 {
@@ -502,11 +498,11 @@
 
         layer_8 {
             bindings = <
-&kp MINUS  &kp N0  &kp N9  &kp N8  &kp N7  &kp NUMBER_6                  &none  &none  &none  &none  &none  &none
-&none      &none   &none   &none   &none   &none                         &none  &none  &none  &none  &none  &none
-&none      &none   &none   &none   &none   &none                         &none  &none  &none  &none  &none  &none
-&none      &none   &none   &none   &none   &none         &none    &none  &none  &none  &none  &none  &none  &none
-                           &none   &none   &none         &none    &none  &none  &none  &none
+&kp MINUS  &kp N0  &kp N9  &kp N8  &kp N7  &kp NUMBER_6              &kp  &kp  &kp  &kp  &kp  &kp
+&kp        &kp     &kp     &kp     &kp     &kp                       &kp  &kp  &kp  &kp  &kp  &kp
+&kp        &kp     &kp     &kp     &kp     &kp                       &kp  &kp  &kp  &kp  &kp  &kp
+&kp        &kp     &kp     &kp     &kp     &kp           &kp    &kp  &kp  &kp  &kp  &kp  &kp  &kp
+                           &kp     &kp     &kp           &kp    &kp  &kp  &kp  &kp
             >;
 
             label = "8";
@@ -514,11 +510,11 @@
 
         layer_9 {
             bindings = <
-&trans                   &trans                   &trans                  &trans                  &trans                  &trans                                     &trans  &trans  &trans  &trans  &trans  &trans
-&kp LS(LA(LC(LG(F13))))  &kp LS(LA(LC(LG(F16))))  &kp LS(LA(LC(LG(F7))))  &kp LS(LA(LC(LG(F8))))  &kp LS(LA(LC(LG(F9))))  &kp LS(LA(LC(LG(F8))))                     &trans  &trans  &trans  &trans  &trans  &trans
-&kp LS(LA(LC(LG(F14))))  &kp LS(LA(LC(LG(F17))))  &kp LS(LA(LC(LG(F4))))  &kp LS(LA(LC(LG(F5))))  &kp LS(LA(LC(LG(F6))))  &kp LS(LA(LC(LG(F5))))                     &trans  &trans  &trans  &trans  &trans  &trans
-&kp LS(LA(LC(LG(F15))))  &kp LS(LA(LC(LG(F18))))  &kp LS(LA(LC(LG(F1))))  &kp LS(LA(LC(LG(F2))))  &kp LS(LA(LC(LG(F3))))  &kp LS(LA(LC(LG(F12))))  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                                                                          &kp LS(LA(LC(LG(N))))   &kp LS(LA(LC(LG(X))))   &kp LS(LA(LC(LG(Q))))    &trans    &trans  &trans  &trans  &trans
+&none                    &none                    &none                   &kp LS(LA(LC(LG(F19))))  &none                   &none                                    &none  &none  &none  &none  &none  &none
+&kp LS(LA(LC(LG(F13))))  &kp LS(LA(LC(LG(F16))))  &kp LS(LA(LC(LG(F7))))  &kp LS(LA(LC(LG(F8))))   &kp LS(LA(LC(LG(F9))))  &kp LS(LA(LC(LG(F8))))                   &none  &none  &none  &none  &none  &none
+&kp LS(LA(LC(LG(F14))))  &kp LS(LA(LC(LG(F17))))  &kp LS(LA(LC(LG(F4))))  &kp LS(LA(LC(LG(F5))))   &kp LS(LA(LC(LG(F6))))  &kp LS(LA(LC(LG(F5))))                   &none  &none  &none  &none  &none  &none
+&kp LS(LA(LC(LG(F15))))  &kp LS(LA(LC(LG(F18))))  &kp LS(LA(LC(LG(F1))))  &kp LS(LA(LC(LG(F2))))   &kp LS(LA(LC(LG(F3))))  &kp LS(LA(LC(LG(F12))))  &none    &none  &none  &none  &none  &none  &none  &none
+                                                                          &kp LS(LA(LC(LG(N))))    &kp LS(LA(LC(LG(X))))   &kp LS(LA(LC(LG(Q))))    &none    &none  &none  &none  &none
             >;
 
             label = "9";
@@ -527,11 +523,11 @@
         layer_10 {
             label = "10";
             bindings = <
-&kp MINUS     &kp N0         &kp N9      &kp N8                   &kp N7                  &kp N6                                  &kp N5                  &kp N4                  &kp N3                   &kp N2  &kp N1  &kp GRAVE
-&none         &kp P          &kp O       &kp I                    &kp U                   &kp Y                                   &kp T                   &kp R                   &kp E                    &kp W   &kp Q   &none
-&kp LG(RBKT)  &kp SEMICOLON  &kp L       &kp K                    &kp J                   &kp H                                   &kp G                   &kp F                   &kp D                    &kp S   &kp A   &kp LG(RBKT)
-&kp LG(LBKT)  &kp SLASH      &kp PERIOD  &kp COMMA                &kp M                   &kp N                   &none    &none  &kp B                   &kp V                   &kp C                    &kp X   &kp Z   &kp LG(LBKT)
-                                         &kp LS(LA(LC(LG(F19))))  &kp LS(LA(LC(LG(F4))))  &kp LS(LA(LC(LG(F6))))  &none    &none  &kp LS(LA(LC(LG(F4))))  &kp LS(LA(LC(LG(F6))))  &kp LS(LA(LC(LG(F22))))
+&kp MINUS           &kp N0         &kp N9      &kp N8            &kp N7        &kp N6                         &kp N5        &kp N4         &kp N3             &kp N2  &kp N1  &kp GRAVE
+&none               &kp P          &kp O       &kp I             &kp U         &kp Y                          &kp T         &kp R          &kp E              &kp W   &kp Q   &none
+&kp LA(LEFT_ARROW)  &kp SEMICOLON  &kp L       &kp K             &kp J         &kp H                          &kp G         &kp F          &kp D              &kp S   &kp A   &kp LG(RBKT)
+&kp LA(RIGHT)       &kp SLASH      &kp PERIOD  &kp COMMA         &kp M         &kp N          &none    &none  &kp B         &kp V          &kp C              &kp X   &kp Z   &kp LG(LBKT)
+                                               &kp LS(LG(LEFT))  &kp LG(LEFT)  &kp LG(RIGHT)  &none    &none  &kp LG(LEFT)  &kp LG(RIGHT)  &kp LS(LG(RIGHT))
             >;
         };
 
