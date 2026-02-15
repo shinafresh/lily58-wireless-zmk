@@ -345,6 +345,30 @@
             label = "NEW_MACRO15";
         };
 
+        new_macro16: new_macro16 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_release>;
+            label = "NEW_MACRO16";
+        };
+
+        new_macro17: new_macro17 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_release>;
+            label = "NEW_MACRO17";
+        };
+
         new_macro18: new_macro18 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -509,6 +533,552 @@
                 <&macro_tap>,
                 <&macro_release>;
             label = "NEW_MACRO40";
+        };
+
+        new_macro41: new_macro41 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_release>;
+            label = "NEW_MACRO41";
+        };
+
+        new_macro42: new_macro42 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_release>;
+            label = "NEW_MACRO42";
+        };
+
+        new_macro43: new_macro43 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_release>;
+            label = "NEW_MACRO43";
+        };
+
+        new_macro44: new_macro44 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_release>;
+            label = "NEW_MACRO44";
+        };
+
+        new_macro45: new_macro45 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_release>;
+            label = "NEW_MACRO45";
+        };
+
+        new_macro46: new_macro46 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_release>;
+            label = "NEW_MACRO46";
+        };
+
+        new_macro47: new_macro47 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_release>;
+            label = "NEW_MACRO47";
+        };
+
+        new_macro48: new_macro48 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_release>;
+            label = "NEW_MACRO48";
+        };
+
+        new_macro49: new_macro49 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_release>;
+            label = "NEW_MACRO49";
+        };
+
+        new_macro50: new_macro50 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_release>;
+            label = "NEW_MACRO50";
+        };
+
+        new_macro51: new_macro51 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_release>;
+            label = "NEW_MACRO51";
+        };
+
+        new_macro52: new_macro52 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_release>;
+            label = "NEW_MACRO52";
+        };
+
+        new_macro53: new_macro53 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_release>;
+            label = "NEW_MACRO53";
+        };
+
+        new_macro54: new_macro54 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_release>;
+            label = "NEW_MACRO54";
+        };
+
+        new_macro55: new_macro55 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_release>;
+            label = "NEW_MACRO55";
+        };
+
+        new_macro56: new_macro56 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_release>;
+            label = "NEW_MACRO56";
+        };
+
+        new_macro57: new_macro57 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_release>;
+            label = "NEW_MACRO57";
+        };
+
+        new_macro58: new_macro58 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_release>;
+            label = "NEW_MACRO58";
+        };
+
+        new_macro59: new_macro59 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_release>;
+            label = "NEW_MACRO59";
+        };
+
+        new_macro60: new_macro60 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_release>;
+            label = "NEW_MACRO60";
+        };
+
+        new_macro61: new_macro61 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_release>;
+            label = "NEW_MACRO61";
+        };
+
+        new_macro62: new_macro62 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_release>;
+            label = "NEW_MACRO62";
+        };
+
+        new_macro63: new_macro63 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_release>;
+            label = "NEW_MACRO63";
+        };
+
+        new_macro64: new_macro64 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_release>;
+            label = "NEW_MACRO64";
+        };
+
+        new_macro65: new_macro65 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_release>;
+            label = "NEW_MACRO65";
+        };
+
+        new_macro66: new_macro66 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_release>;
+            label = "NEW_MACRO66";
+        };
+
+        new_macro67: new_macro67 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_release>;
+            label = "NEW_MACRO67";
+        };
+
+        new_macro68: new_macro68 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_release>;
+            label = "NEW_MACRO68";
+        };
+
+        new_macro69: new_macro69 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_release>;
+            label = "NEW_MACRO69";
+        };
+
+        new_macro70: new_macro70 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_release>;
+            label = "NEW_MACRO70";
+        };
+
+        new_macro71: new_macro71 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_release>;
+            label = "NEW_MACRO71";
+        };
+
+        new_macro72: new_macro72 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_release>;
+            label = "NEW_MACRO72";
+        };
+
+        new_macro73: new_macro73 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_release>;
+            label = "NEW_MACRO73";
+        };
+
+        new_macro74: new_macro74 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_release>;
+            label = "NEW_MACRO74";
+        };
+
+        new_macro75: new_macro75 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_release>;
+            label = "NEW_MACRO75";
+        };
+
+        new_macro76: new_macro76 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_release>;
+            label = "NEW_MACRO76";
+        };
+
+        new_macro77: new_macro77 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_release>;
+            label = "NEW_MACRO77";
+        };
+
+        new_macro78: new_macro78 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_release>;
+            label = "NEW_MACRO78";
+        };
+
+        new_macro79: new_macro79 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_release>;
+            label = "NEW_MACRO79";
+        };
+
+        new_macro80: new_macro80 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_release>;
+            label = "NEW_MACRO80";
+        };
+
+        new_macro81: new_macro81 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_release>;
+            label = "NEW_MACRO81";
+        };
+
+        new_macro82: new_macro82 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_tap>,
+                <&macro_release>;
+            label = "NEW_MACRO82";
+        };
+
+        new_macro100: new_macro100 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N1 &kp N2>;
+            label = "NEW_MACRO100";
+        };
+
+        new_macro101: new_macro101 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N1 &kp N2>;
+            label = "NEW_MACRO101";
+        };
+
+        new_macro102: new_macro102 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N1 &kp N2>;
+            label = "NEW_MACRO102";
+        };
+
+        new_macro103: new_macro103 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N1 &kp N2>;
+            label = "NEW_MACRO103";
+        };
+
+        new_macro104: new_macro104 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N1 &kp N2>;
+            label = "NEW_MACRO104";
+        };
+
+        new_macro105: new_macro105 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N1 &kp N2>;
+            label = "NEW_MACRO105";
         };
 
     };
