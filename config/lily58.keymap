@@ -476,21 +476,21 @@
         layer_6 {
             display-name = "6";
             bindings = <
-&bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &none  &none  &none  &none  &none  &none
-&none        &none         &none         &none         &none         &none                         &none  &none  &none  &none  &none  &none
-&none        &none         &none         &none         &none         &none                         &none  &none  &none  &none  &none  &none
-&bootloader  &none         &none         &none         &none         &none         &none    &none  &none  &none  &none  &none  &none  &bootloader
-                                         &none         &none         &none         &none    &none  &none  &none  &none
+&bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2     &bt BT_SEL 3  &bt BT_SEL 4                       &none            &kp CAPSLOCK  &kp LOCKING_NUM  &kp INSERT  &none  &none
+&none        &none         &none         &none            &none         &kp C_VOLUME_DOWN                  &kp C_VOLUME_UP  &none         &none            &none       &none  &none
+&none        &none         &none         &none            &none         &kp K_CALCULATOR                   &kp K_CALC       &none         &none            &none       &none  &none
+&bootloader  &none         &none         &none            &none         &none              &none    &none  &none            &none         &none            &none       &none  &bootloader
+                                         &kp LA(LC(END))  &none         &none              &none    &none  &none            &none         &kp LA(LC(DEL))
             >;
         };
 
         layer_7 {
             bindings = <
-&trans   &trans           &trans           &trans         &trans         &trans                            &trans          &trans         &trans         &trans       &trans           &trans
-&kp TAB  &kp N0           &kp N7           &mt LGUI N8    &kp N9         &kp N0                            &kp GRAVE       &kp N7         &mt LGUI N8    &kp N9       &kp N0           &kp BSPC
-&kp ESC  &mt LCTRL MINUS  &mt LEFT_ALT N4  &mt LSHIFT N5  &mt LGUI N6    &mt LCTRL PLUS                    &mt LCTRL PLUS  &mt LGUI N4    &mt LSHIFT N5  &mt LALT N6  &mt LCTRL MINUS  &kp RET
-&kp DEL  &kp FSLH         &kp N1           &mt LALT N2    &mt LSHIFT N3  &kp ASTERISK    &trans    &trans  &kp ASTERISK    &mt LSHIFT N1  &mt LALT N2    &kp N3       &kp FSLH         &kp DEL
-                                           &kp DOT        &kp BSLH       &kp LBKT        &trans    &trans  &kp RBKT        &kp PIPE       &kp DOT
+&none    &none              &none              &none            &none            &none                           &none             &none            &none            &none          &none              &none
+&kp TAB  &kp N0             &kp N7             &hmMT LGUI N8    &kp N9           &kp N0                          &kp GRAVE         &kp N7           &hmMT LGUI N8    &kp N9         &kp N0             &kp BSPC
+&kp ESC  &hmMT LCTRL MINUS  &hmMT LEFT_ALT N4  &hmMT LSHIFT N5  &hmMT LGUI N6    &mt LCTRL PLUS                  &hmMT LCTRL PLUS  &hmMT LGUI N4    &hmMT LSHIFT N5  &hmMT LALT N6  &hmMT LCTRL MINUS  &kp RET
+&kp DEL  &kp FSLH           &kp N1             &hmMT LALT N2    &hmMT LSHIFT N3  &kp ASTERISK    &none    &none  &kp ASTERISK      &hmMT LSHIFT N1  &hmMT LALT N2    &kp N3         &kp FSLH           &kp DEL
+                                               &kp DOT          &kp BSLH         &kp LBKT        &none    &none  &kp RBKT          &kp PIPE         &kp DOT
             >;
 
             label = "7";
@@ -498,11 +498,11 @@
 
         layer_8 {
             bindings = <
-&kp MINUS  &kp N0  &kp N9  &kp N8  &kp N7  &kp NUMBER_6              &kp  &kp  &kp  &kp  &kp  &kp
-&kp        &kp     &kp     &kp     &kp     &kp                       &kp  &kp  &kp  &kp  &kp  &kp
-&kp        &kp     &kp     &kp     &kp     &kp                       &kp  &kp  &kp  &kp  &kp  &kp
-&kp        &kp     &kp     &kp     &kp     &kp           &kp    &kp  &kp  &kp  &kp  &kp  &kp  &kp
-                           &kp     &kp     &kp           &kp    &kp  &kp  &kp  &kp
+&kp MINUS   &kp N0  &kp N9      &kp N8      &kp N7      &kp NUMBER_6                  &kp N5      &kp N4      &kp N3      &kp N2      &kp N1  &kp GRAVE
+&kp LC(F4)  &none   &kp LA(N7)  &kp LA(N8)  &kp LA(N9)  &kp LA(N0)                    &kp LA(N0)  &kp LA(N7)  &kp LA(N8)  &kp LA(N9)  &none   &kp LC(F4)
+&none       &none   &kp LA(N4)  &kp LA(N5)  &kp LA(N6)  &none                         &none       &kp LA(N4)  &kp LA(N5)  &kp LA(N6)  &none   &none
+&none       &none   &kp LA(N1)  &kp LA(N2)  &kp LA(N3)  &none         &none    &none  &none       &kp LA(N1)  &kp LA(N2)  &kp LA(N3)  &none   &none
+                                &kp LC(F5)  &kp LC(F6)  &kp LC(F7)    &none    &none  &kp LC(F7)  &kp LC(F6)  &kp LC(F5)
             >;
 
             label = "8";
@@ -523,11 +523,11 @@
         layer_10 {
             label = "10";
             bindings = <
-&kp MINUS           &kp N0         &kp N9      &kp N8            &kp N7        &kp N6                         &kp N5        &kp N4         &kp N3             &kp N2  &kp N1  &kp GRAVE
-&none               &kp P          &kp O       &kp I             &kp U         &kp Y                          &kp T         &kp R          &kp E              &kp W   &kp Q   &none
-&kp LA(LEFT_ARROW)  &kp SEMICOLON  &kp L       &kp K             &kp J         &kp H                          &kp G         &kp F          &kp D              &kp S   &kp A   &kp LG(RBKT)
-&kp LA(RIGHT)       &kp SLASH      &kp PERIOD  &kp COMMA         &kp M         &kp N          &none    &none  &kp B         &kp V          &kp C              &kp X   &kp Z   &kp LG(LBKT)
-                                               &kp LS(LG(LEFT))  &kp LG(LEFT)  &kp LG(RIGHT)  &none    &none  &kp LG(LEFT)  &kp LG(RIGHT)  &kp LS(LG(RIGHT))
+&kp MINUS      &kp N0         &kp N9      &kp N8            &kp N7        &kp N6                         &kp N5        &kp N4         &kp N3             &kp N2  &kp N1  &kp GRAVE
+&none          &kp P          &kp O       &kp I             &kp U         &kp Y                          &kp T         &kp R          &kp E              &kp W   &kp Q   &none
+&kp LA(RIGHT)  &kp SEMICOLON  &kp L       &kp K             &kp J         &kp H                          &kp G         &kp F          &kp D              &kp S   &kp A   &kp LA(RIGHT)
+&kp LA(LEFT)   &kp SLASH      &kp PERIOD  &kp COMMA         &kp M         &kp N          &none    &none  &kp B         &kp V          &kp C              &kp X   &kp Z   &kp LA(LEFT)
+                                          &kp LS(LG(LEFT))  &kp LG(LEFT)  &kp LG(RIGHT)  &none    &none  &kp LG(LEFT)  &kp LG(RIGHT)  &kp LS(LG(RIGHT))
             >;
         };
 
