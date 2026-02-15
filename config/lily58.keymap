@@ -465,11 +465,11 @@
         layer_5 {
             display-name = "5";
             bindings = <
-&kp GRAVE  &kp N1  &kp N2  &kp N3   &kp N4   &kp N5               &kp LS(LC(HOME))  &kp LS(LC(LEFT))  &kp LC(A)  &kp LS(LC(RIGHT))  &kp LC(END)  &kp LS(LC(TAB))
-&kp GRAVE  &kp N1  &kp N2  &kp N3   &kp N4   &kp N5               &kp N6            &kp N7            &kp N8     &kp N9             &kp N0       &kp
-&kp F1     &kp F2  &kp F3  &kp F4   &kp F5   &kp F6               &kp               &kp LEFT          &kp DOWN   &kp UP             &kp RIGHT    &kp
-&kp F7     &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &kp    &kp  &kp KP_PLUS       &kp MINUS         &kp EQUAL  &kp LBKT           &kp RBKT     &kp BSLH
-                           &kp      &kp      &kp      &kp    &kp  &kp               &kp               &kp
+&kp GRAVE   &kp N1             &kp N2           &kp N3        &kp N4                &kp N5                                 &kp LS(LC(HOME))  &kp LS(LC(LEFT))          &kp LC(A)                 &kp LS(LC(RIGHT))  &kp LC(END)             &kp LS(LC(TAB))
+&kp TAB     &kp TILDE          &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                  &kp LS(HOME)      &kp HOME                  &hmMT LCTRL UP            &kp END            &kp LS(END)             &kp LC(PAGE_UP)
+&kp ESCAPE  &kp DOUBLE_QUOTES  &kp DOLLAR       &kp PERCENT   &kp CARET             &none                                  &hmMT LGUI F2     &hmMT LCTRL LEFT          &hmMT LSHIFT DOWN         &hmMT LALT RIGHT   &hmMT LS(LCTRL) ESCAPE  &kp LC(PAGE_DOWN)
+&kp DELETE  &kp SQT            &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &none                  &none    &none  &kp F4            &hmMT LEFT_SHIFT PAGE_UP  &hmMT LALT K_APPLICATION  &kp PAGE_DOWN      &hmMT LSHIFT F12        &kp LC(TAB)
+                                                &none         &mo 6                 &none                  &none    &none  &none             &kp ENTER                 &kp DELETE
             >;
         };
 
