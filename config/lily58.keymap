@@ -428,11 +428,11 @@
 
         layer_2 {
             bindings = <
-&kp LG(UP)       &kp LS(LG(UP))            &kp LS(LA(LEFT))     &kp LG(A)                 &kp LA(LS(RIGHT))       &kp LS(LG(DOWN))                      &none         &none          &none              &kp TILDE      &none                  &kp EQUAL
-&kp LS(LG(TAB))  &kp LS(LG(LEFT))          &kp LG(LEFT)         &hmMT LGUI UP             &kp LG(RIGHT)           &kp LS(LG(RIGHT))                     &kp GRAVE     &kp N7         &hmMT LGUI N8      &kp N9         &kp N0                 &kp BACKSPACE
-&kp LG(TAB)      &hmMT LS(LEFT_ALT) ENTER  &hmMT LEFT_ALT LEFT  &hmMT LSHIFT DOWN         &hmMT LGUI RIGHT        &hmMT LEFT_ALT ENTER                  &kp PLUS      &hmMT LGUI N4  &hmMT LSHFT N5     &hmMT LALT N6  &hmMT LA(LCTRL) MINUS  &kp ENTER
-&kp LG(DOWN)     &mt LSHIFT CAPS           &kp PAGE_UP          &hmMT LALT K_APPLICATION  &hmMT LSHIFT PAGE_DOWN  &none                 &none    &none  &kp ASTERISK  &kp N1         &hmMT LEFT_ALT N2  &kp N3         &kp SLASH              &kp DELETE
-                                                                &kp ESCAPE                &kp TAB                 &none                 &none    &none  &kp SPACE     &kp ENTER      &kp DOT
+&kp LG(UP)       &kp LS(LG(UP))            &kp LS(LA(LEFT))     &kp LG(A)                 &kp LA(LS(RIGHT))       &kp LS(LG(DOWN))                       &none         &none          &none              &kp TILDE      &none              &kp EQUAL
+&kp LS(LG(TAB))  &kp LS(LG(LEFT))          &kp LG(LEFT)         &hmMT LGUI UP             &kp LG(RIGHT)           &kp LS(LG(RIGHT))                      &kp GRAVE     &kp N7         &hmMT LGUI N8      &kp N9         &kp N0             &kp BACKSPACE
+&kp LG(TAB)      &hmMT LS(LEFT_ALT) ENTER  &hmMT LEFT_ALT LEFT  &hmMT LSHIFT DOWN         &hmMT LGUI RIGHT        &hmMT LCTRL LA(ENTER)                  &kp PLUS      &hmMT LGUI N4  &hmMT LSHFT N5     &hmMT LALT N6  &hmMT LCTRL MINUS  &kp ENTER
+&kp LG(DOWN)     &mt LSHIFT CAPS           &kp PAGE_UP          &hmMT LALT K_APPLICATION  &hmMT LSHIFT PAGE_DOWN  &none                  &none    &none  &kp ASTERISK  &kp N1         &hmMT LEFT_ALT N2  &kp N3         &kp SLASH          &kp DELETE
+                                                                &kp ESCAPE                &kp TAB                 &none                  &none    &none  &kp SPACE     &kp ENTER      &kp DOT
             >;
 
             label = "2";
@@ -452,11 +452,11 @@
 
         layer_4 {
             bindings = <
-&kp  &kp  &kp  &kp  &kp    &kp              &kp  &kp  &kp  &kp  &kp  &kp
-&kp  &kp  &kp  &kp  &kp    &kp              &kp  &kp  &kp  &kp  &kp  &kp
-&kp  &kp  &kp  &kp  &kp F  &kp              &kp  &kp  &kp  &kp  &kp  &kp
-&kp  &kp  &kp  &kp  &kp    &kp  &kp    &kp  &kp  &kp  &kp  &kp  &kp  &kp
-               &kp  &kp    &kp  &kp    &kp  &kp  &kp  &kp
+&kp LS(LC(TAB))    &kp LS(LC(HOME))        &kp LS(LC(LEFT))  &kp LC(A)                 &kp LS(LC(RIGHT))       &kp LS(LC(END))                  &none         &none           &none            &kp TILDE      &none             &kp EQUAL
+&kp LC(PAGE_UP)    &kp LS(HOME)            &kp HOME          &hmMT LCTRL UP            &kp END                 &kp LS(END)                      &kp TILDE     &kp N7          &hmMT LCTRL N8   &kp N9         &kp N0            &kp BACKSPACE
+&kp LC(PAGE_DOWN)  &hmMT LC(LSHIFT) ENTER  &hmMT LALT LEFT   &hmMT LSHFT DOWN          &hmMT LCTRL RIGHT       &hmMT LGUI F2                    &kp PLUS      &hmMT LCTRL N4  &hmMT LSHIFT N5  &hmMT LALT N6  &hmMT LGUI MINUS  &kp ENTER
+&kp LC(TAB)        &mt LSHIFT F12          &kp PAGE_UP       &hmMT LALT K_APPLICATION  &hmMT LSHIFT PAGE_DOWN  &kp F4           &none    &none  &kp ASTERISK  &kp N1          &hmMT LALT N2    &kp N3         &kp SLASH         &kp DELETE
+                                                             &kp ESCAPE                &kp TAB                 &none            &none    &none  &kp SPACE     &kp ENTER       &kp DOT
             >;
 
             label = "4";
@@ -465,11 +465,11 @@
         layer_5 {
             display-name = "5";
             bindings = <
-&kp        &kp     &kp     &kp      &kp      &kp                  &kp          &kp        &kp        &kp       &kp        &kp
-&kp GRAVE  &kp N1  &kp N2  &kp N3   &kp N4   &kp N5               &kp N6       &kp N7     &kp N8     &kp N9    &kp N0     &kp
-&kp F1     &kp F2  &kp F3  &kp F4   &kp F5   &kp F6               &kp          &kp LEFT   &kp DOWN   &kp UP    &kp RIGHT  &kp
-&kp F7     &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &kp    &kp  &kp KP_PLUS  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT   &kp BSLH
-                           &kp      &kp      &kp      &kp    &kp  &kp          &kp        &kp
+&kp GRAVE  &kp N1  &kp N2  &kp N3   &kp N4   &kp N5               &kp LS(LC(HOME))  &kp LS(LC(LEFT))  &kp LC(A)  &kp LS(LC(RIGHT))  &kp LC(END)  &kp LS(LC(TAB))
+&kp GRAVE  &kp N1  &kp N2  &kp N3   &kp N4   &kp N5               &kp N6            &kp N7            &kp N8     &kp N9             &kp N0       &kp
+&kp F1     &kp F2  &kp F3  &kp F4   &kp F5   &kp F6               &kp               &kp LEFT          &kp DOWN   &kp UP             &kp RIGHT    &kp
+&kp F7     &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &kp    &kp  &kp KP_PLUS       &kp MINUS         &kp EQUAL  &kp LBKT           &kp RBKT     &kp BSLH
+                           &kp      &kp      &kp      &kp    &kp  &kp               &kp               &kp
             >;
         };
 
